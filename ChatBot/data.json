@@ -1,0 +1,29 @@
+// follow this structure
+// we need to add more data
+[
+  {
+    "tag": "greeting",
+    "patterns": ["hi", "hello", "hey"],
+    "responses": ["Hello!", "Hi there!", "Welcome! How can I assist you today?"]
+  },
+  {
+    "tag": "greeting",
+    "patterns": ["how's it going", "what's up"],
+    "responses": ["I'm here to help!", "Not much, just here to assist you.", "Hello! How can I assist you today?"]
+  },
+  {
+    "tag": "product_info",
+    "patterns": ["tell me about your products", "what do you sell"],
+    "responses": ["We offer a wide range of products. Is there something specific you're looking for?", "Our products include electronics, clothing, and more. What are you interested in?"]
+  },
+  {
+    "tag": "product_info",
+    "patterns": ["can you recommend a product", "what's popular"],
+    "responses": ["Certainly! Our bestsellers include [product 1], [product 2], and [product 3].", "We have some great products, like [product A] and [product B]."]
+  },
+  {
+    "tag": "goodbye",
+    "patterns": ["bye", "see you later"],
+    "responses": ["Goodbye! Have a great day!", "See you later!"]
+  }
+]
