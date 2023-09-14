@@ -602,8 +602,7 @@
             "patterns": ["can i stack promo codes during checkout"],
             "responses": [
               "Yes, you can stack promo codes during checkout.",
-              "However, not all promo codes can be stacked.",
-              "Please read the terms and conditions of each promo code to see if it can be stacked."
+              "However, not all promo codes can be stacked."
             ]
           },
           {
@@ -620,16 +619,6 @@
             "responses": [
               "Yes, we offer a buy-two-get-one-free promotion on select items.",
               "To find out more about this promotion, please visit our website."
-            ]
-          },
-          {
-            "tag": "callback_scheduling",
-            "patterns": ["can i schedule a callback from a representative"],
-            "responses": [
-              "Yes, you can schedule a callback from a representative.",
-              "To do this, please visit our website and click on the 'Contact Us' page.",
-              "Fill out the form and select the option for a callback.",
-              "We will call you back at the time you specified."
             ]
           },
           {
@@ -687,16 +676,6 @@
             ]
           },
           {
-            "tag": "file_download_troubleshooting",
-            "patterns": ["every time i try to download a file, nothing happens. what should i do"],
-            "responses": [
-              "There are a few reasons why you might be having trouble downloading a file.",
-              "Please make sure that you have enough storage space on your device.",
-              "You may also need to disable any ad blockers or pop-up blockers that you are using.",
-              "If you are still having trouble downloading a file, please contact us and we will be happy to help you."
-            ]
-          },
-          {
             "tag": "form_filling_troubleshooting",
             "patterns": ["i keep getting errors while trying to fill out a form. can you assist me"],
             "responses": [
@@ -725,74 +704,5 @@
               "You may also need to clear your browser's cache and cookies.",
               "If you are still having trouble loading images, please contact us and we will be happy to help you."
             ]
-          },
-          {
-            "tag": "spanish_speaking_representatives",
-            "patterns": ["do you have spanish-speaking representatives available at all hours of the day"],
-            "responses": [
-              "Yes, we have Spanish-speaking representatives available at all hours of the day.",
-              "To speak with a Spanish-speaking representative, please select the Spanish option when you call us or chat with us online."
-            ]
-          },
-          {
-            "tag": "language_understanding",
-            "patterns": ["my main language isn't english, so would you still be able to understand my inquiries via chat"],
-            "responses": [
-              "Yes, I am able to understand inquiries in multiple languages, including Spanish, French, German, and Chinese.",
-              "If you start a chat with me in a language other than English, I will automatically detect your language and translate your message into English.",
-              "I will also translate my responses back into your language."
-            ]
-          },
-          {
-            "tag": "language_switching",
-            "patterns": ["would it be possible for you to switch between different languages depending on our conversation"],
-            "responses": [
-              "Yes, it is possible for me to switch between different languages depending on our conversation.",
-              "To switch languages, please type `switch to <language>`.",
-              "For example, to switch to Spanish, you would type `switch to spanish`."
-            ]
-          },
-          {
-            "tag": "multiple_languages",
-            "patterns": ["when selecting multiple languages, do they all display simultaneously, or can we switch between them easily"],
-            "responses": [
-              "When you select multiple languages, they will all display simultaneously.",
-              "You can switch between them by clicking on the language you want to use.",
-              "You can also use the keyboard shortcuts `Ctrl+Shift+L` to switch to the next language and `Ctrl+Shift+K` to switch to the previous language."
-            ]
-          },
-          {
-            "tag": "language_detection",
-            "patterns": ["does your chatbot automatically detect users' languages, or do we need to specify it ourselves"],
-            "responses": [
-              "Yes, my chatbot can automatically detect users' languages.",
-              "However, if you prefer to specify the language yourself, you can do so by typing `language <language>`.",
-              "For example, to specify that you want to use Spanish, you would type `language spanish`."
-            ]
-          },
-          {
-            "tag": "product_recommendation_patterns",
-            "patterns": ["has the ai system noticed any patterns in my searches or purchases? if so, could it provide relevant product suggestions"],
-            "responses": [
-              "Yes, the AI system has noticed patterns in your searches and purchases.",
-              "Based on these patterns, we can provide you with relevant product suggestions."
-            ]
-          },
-          {
-            "tag": "product_recommendation_customization",
-            "patterns": ["instead of showing me generic options, can the algorithm tailor its suggestions according to specific preferences like color or brand"],
-            "responses": [
-              "Yes, the algorithm can tailor its suggestions according to your specific preferences.",
-              "For example, if you have indicated that you prefer red products, the algorithm will show you more red products in its recommendations."
-            ]
-          },
-          {
-            "tag": "product_recommendation_chat",
-            "patterns": ["can i request personalized recommendations via chat without going through the entire browsing process again"],
-            "responses": [
-              "Yes, you can request personalized recommendations via chat.",
-              "Simply type `recommendations` and the chatbot will ask you a few questions to understand your preferences.",
-              "The chatbot will then provide you with a list of personalized recommendations."
-            ]
-          }                                 
+          }                               
 ]
