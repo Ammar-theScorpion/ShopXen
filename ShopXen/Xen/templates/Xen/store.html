@@ -1,5 +1,18 @@
 {% extends 'Xen/main.html' %}
 {% load static %}
 {% block content%}
-<h1>Store</h1>
+
+<div class="row">
+
+    {% for product in products %}
+    <div class="col-lg-4">
+        <a href="{% url 'product' product.name %}">
+            <img class="products" src="{% static 'images/.png' %}"/>
+        </a>
+
+    </div>
+    {% endfor %}
+
+
+</div>
 {% endblock content%}
