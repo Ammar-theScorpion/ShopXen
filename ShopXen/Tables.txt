@@ -1,0 +1,82 @@
+For conceptual model we need
+
+Customer
+
+Cart
+
+wishlist --
+
+Order (aka general information of a product being ordered by a customer)
+
+Order item
+
+payment
+
+Shipping --
+
+
+Relations
+
+A Customer can place several orders but an order Can have one customer 1-N
+
+Product and order item is 1-N
+
+Payment and Order is 1-N
+
+Cart is one-one with Customer
+
+WishList is one-one with Customer
+
+Cart and Wishlist is one to many with product
+
+
+Logical
+
+Customer
+- first name
+- last name
+- phone number
+- address
+- email
+- password
+- customer_id (PK)
+
+Cart
+- customer_id (FK) 
+- Product_id (FK)
+- Cart_id (PK)
+
+Wishlist
+- customer_id (FK) 
+- Product_id (FK)
+- Cart_id (PK)
+
+Order
+- order_id (PK)
+- customer_id (FK)
+- payment_id (FK)
+- shipment_id (FK)
+- Order_data
+- total_price
+- 
+
+Order item
+- Orderitem_id (PK)
+- Order_id (PK, FK)
+- Product_id (FK)
+- item_price
+- quantity
+
+Payment
+- payment_id (PK)
+- payment_type
+- customer_id (FK)
+- amount?
+
+Shipment
+- Shipment_id (PK)
+- customer_id (FK)
+- address
+- city
+- country
+- zip
