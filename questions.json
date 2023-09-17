@@ -1,0 +1,63 @@
+  {
+    "tag": "shipping_address",
+    "patterns": [
+      "would you like your order shipped to your home address or work address"
+    ],
+    "responses": [
+      "Ok, done",
+      "Please specify your shipping address."
+    ]
+  },
+  {
+    "tag": "notification",
+    "patterns": [
+      "would you like to receive a confirmation email or text message"
+    ],
+    "responses": [
+      "Ok, done",
+      "Please specify your notification way."
+    ]
+  },
+  {
+    "tag": "wishlist",
+    "patterns": [
+      "would you like to add this product to your wishlist"
+    ],
+    "responses": [
+      "Would you like to add this product to your wishlist?",
+      "You can add this product to your wishlist by clicking the 'Add to Wishlist' button."
+    ]
+  },
+  {
+    "tag": "newsletter",
+    "patterns": [
+      "would you like to subscribe to our newsletter"
+    ],
+    "responses": [
+      "Would you like to subscribe to our newsletter?",
+      "You can subscribe to our newsletter by clicking the 'Subscribe to Newsletter' button."
+    ]
+  },
+  {
+    "tag": "customer_service_feedback",
+    "patterns": [
+      "how can we improve our customer service"
+    ],
+    "responses": [
+      "We're always looking for ways to improve our customer service.",
+      "What can we do to make your experience better?",
+      "Thank you for your feedback. We'll take it into account when we're making improvements to our customer service."
+    ]
+  },
+  {
+    "tag": "closing",
+    "patterns": [
+      "what else can i help you with today",
+      "do you have any other questions"
+    ],
+    "responses": [
+      "Is there anything else that I can help you with today?",
+      "Thank you for your time. Is there anything else that I can help you with?",
+      "I'm happy to help you with anything else that you need."
+    ]
+  },
