@@ -3,17 +3,8 @@
         "model": "Xen.product",
         "pk": 1,
         "fields": {
-            "name": "Smartphone",
-            "description": "A high-end smartphone",
-            "category": 1
-        }
-    },
-    {
-        "model": "Xen.product",
-        "pk": 2,
-        "fields": {
-            "name": "Laptop",
-            "description": "Powerful laptop for professionals",
+            "name": "Apple AirPods Pro",
+            "description": "(2nd Gen) Wireless Earbuds, Up to 2X More Active Noise Cancelling, Adaptive Transparency, Personalized Spatial Audio MagSafe Charging Case (Lightning) Bluetooth Headphones for iPhone",
             "category": 1
         }
     },
@@ -23,16 +14,16 @@
         "pk": 1,
         "fields": {
             "variant": "Color",
-            "image": "color.png",
-            "brand": ""
+            "image": "",
+            "brand": "Apple"
         }
     },
     {
         "model": "Xen.variants",
         "pk": 2,
         "fields": {
-            "variant": "Storage Capacity",
-            "image": "storage.png",
+            "variant": "Price",
+            "image": "",
             "brand": ""
         }
     },
@@ -42,7 +33,7 @@
         "pk": 1,
         "fields": {
             "variant_id": 1,
-            "value": "Black"
+            "value": "White"
         }
     },
     {
@@ -50,23 +41,7 @@
         "pk": 2,
         "fields": {
             "variant_id": 1,
-            "value": "White"
-        }
-    },
-    {
-        "model": "Xen.variantvalue",
-        "pk": 3,
-        "fields": {
-            "variant_id": 2,
-            "value": "256GB"
-        }
-    },
-    {
-        "model": "Xen.variantvalue",
-        "pk": 4,
-        "fields": {
-            "variant_id": 2,
-            "value": "512GB"
+            "value": "50"
         }
     },
 
@@ -90,14 +65,74 @@
             "price": "849.99"
         }
     },
+
     {
-        "model": "Xen.productvariants",
+        "model": "Xen.product",
+        "pk": 2,
+        "fields": {
+            "name": "Apple AirPods",
+            "description": "(2nd Generation) Wireless Earbuds with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone",
+            "category": 1
+        }
+    },
+
+
+
+    {
+        "model": "Xen.variants",
         "pk": 3,
         "fields": {
-            "product_id": 2,
-            "variant": 1,
-            "sku": "SKU003",
-            "price": "1299.99"
+            "variant": "Color",
+            "image": "",
+            "brand": "Apple"
+        }
+    },
+    {
+        "model": "Xen.variants",
+        "pk": 4,
+        "fields": {
+            "variant": "Price",
+            "image": "",
+            "brand": ""
+        }
+    },
+
+    {
+        "model": "Xen.variantvalue",
+        "pk": 1,
+        "fields": {
+            "variant_id": 3,
+            "value": "White"
+        }
+    },
+    {
+        "model": "Xen.variantvalue",
+        "pk": 2,
+        "fields": {
+            "variant_id": 4,
+            "value": "60"
+        }
+    },
+    
+    {
+        "model": "Xen.product",
+        "pk": 3,
+        "fields": {
+            "name": "Apple AirTag",
+            "description": "We are working hard to be back in stock as soon as possible.",
+            "category": 1
+        }
+    },
+
+    {
+        "model": "Xen.product",
+        "pk": 4,
+        "fields": {
+            "name": "Amazon Basics 48-Pack",
+            "description": "Alkaline High-Performance Batteries, 1.5 Volt, 10-Year Shelf Life",
+            "category": 1
         }
     }
+
+
 ]

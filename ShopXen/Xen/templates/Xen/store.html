@@ -1,39 +1,23 @@
+{% extends 'Xen/main.html' %}
 {% load static %}
+{% block content%}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-
-    <title>Product List</title>
-</head>
-<body>
-    <h1>Product List</h1>
-    <ul>
-        {% for product in products %}
-            <li>
-                <strong>Name:</strong> {{ product.name }}<br>
-                <strong>Description:</strong> {{ product.description }}<br>
-                <strong>Category:</strong> {{ product.category }}<br>
-                <strong>Variants:</strong>
+    <div class="row">
+        {% for category in categories %}
+            <div class="col-lg-4">
+                <div class="box-element product">
                     
+                    <a href="{% url 'product_detail' category.category_id %}">
+                        <h6><strong>{{ category }}</strong></h6>
+                        <img class="thumbnail" src="{{ category.gimage.url }}" >
+                        <small style="color: blue;">Shop now</small>
+                    </a>
+                </div>
+                
+            </div>
 
-                    {% for variant in product.productvariants_set.all %}
-                        <strong>Brand:</strong> {{ variant.variant.brand }}<br>
-                            <img class="thumbnail" src="{{ variant.variant.image.url }}" >
-
-                        <li>
-                            {{ variant.product_variant_name }} - SKU: {{ variant.sku }} - Price: ${{ variant.price }}
-                            <ul>
-                                {% for value in variant.variantvalue_set.all %}
-                                    <li>ahhssssssssssssss{{ value.variant.variant }}: {{ value.value }}</li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+               
+                         
+            {% endfor %}
+        </div>
+{% endblock content%}

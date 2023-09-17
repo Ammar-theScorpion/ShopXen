@@ -4,6 +4,7 @@
         "pk": 1,
         "fields": {
             "category_name": "Electronics",
+            "gimage": "",
             "parent_category": null
         }
     },
@@ -11,8 +12,37 @@
         "model": "Xen.category",
         "pk": 2,
         "fields": {
-            "category_name": "Clothing",
+            "category_name": "Home & Kitchen Under $30",
+            "gimage": "",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "Xen.category",
+        "pk": 3,
+        "fields": {
+            "category_name": "Health & Personal Care",
+            "gimage": "",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "Xen.category",
+        "pk": 4,
+        "fields": {
+            "category_name": "Top Deal",
+            "gimage": "",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "Xen.category",
+        "pk": 5,
+        "fields": {
+            "category_name": "Beauty picks",
+            "gimage": "",
             "parent_category": null
         }
     }
+
 ]
