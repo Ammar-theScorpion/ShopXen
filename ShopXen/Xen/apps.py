@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ShopXenConfig(AppConfig):
+class XenConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'Xen'

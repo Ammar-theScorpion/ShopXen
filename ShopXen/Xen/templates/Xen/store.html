@@ -1,18 +1,39 @@
-{% extends 'Xen/main.html' %}
 {% load static %}
-{% block content%}
 
-<div class="row">
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
-    {% for product in products %}
-    <div class="col-lg-4">
-        <a href="{% url 'product' product.name %}">
-            <img class="products" src="{% static 'images/.png' %}"/>
-        </a>
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <ul>
+        {% for product in products %}
+            <li>
+                <strong>Name:</strong> {{ product.name }}<br>
+                <strong>Description:</strong> {{ product.description }}<br>
+                <strong>Category:</strong> {{ product.category }}<br>
+                <strong>Variants:</strong>
+                    
 
-    </div>
-    {% endfor %}
+                    {% for variant in product.productvariants_set.all %}
+                        <strong>Brand:</strong> {{ variant.variant.brand }}<br>
+                            <img class="thumbnail" src="{{ variant.variant.image.url }}" >
 
-
-</div>
-{% endblock content%}
+                        <li>
+                            {{ variant.product_variant_name }} - SKU: {{ variant.sku }} - Price: ${{ variant.price }}
+                            <ul>
+                                {% for value in variant.variantvalue_set.all %}
+                                    <li>ahhssssssssssssss{{ value.variant.variant }}: {{ value.value }}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

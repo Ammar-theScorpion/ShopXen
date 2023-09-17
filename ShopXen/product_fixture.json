@@ -1,0 +1,103 @@
+[
+    {
+        "model": "Xen.product",
+        "pk": 1,
+        "fields": {
+            "name": "Smartphone",
+            "description": "A high-end smartphone",
+            "category": 1
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 2,
+        "fields": {
+            "name": "Laptop",
+            "description": "Powerful laptop for professionals",
+            "category": 1
+        }
+    },
+
+    {
+        "model": "Xen.variants",
+        "pk": 1,
+        "fields": {
+            "variant": "Color",
+            "image": "color.png",
+            "brand": ""
+        }
+    },
+    {
+        "model": "Xen.variants",
+        "pk": 2,
+        "fields": {
+            "variant": "Storage Capacity",
+            "image": "storage.png",
+            "brand": ""
+        }
+    },
+
+    {
+        "model": "Xen.variantvalue",
+        "pk": 1,
+        "fields": {
+            "variant_id": 1,
+            "value": "Black"
+        }
+    },
+    {
+        "model": "Xen.variantvalue",
+        "pk": 2,
+        "fields": {
+            "variant_id": 1,
+            "value": "White"
+        }
+    },
+    {
+        "model": "Xen.variantvalue",
+        "pk": 3,
+        "fields": {
+            "variant_id": 2,
+            "value": "256GB"
+        }
+    },
+    {
+        "model": "Xen.variantvalue",
+        "pk": 4,
+        "fields": {
+            "variant_id": 2,
+            "value": "512GB"
+        }
+    },
+
+    {
+        "model": "Xen.productvariants",
+        "pk": 1,
+        "fields": {
+            "product_id": 1,
+            "variant":  1,
+            "sku": "SKU001",
+            "price": "799.99"
+        }
+    },
+    {
+        "model": "Xen.productvariants",
+        "pk": 2,
+        "fields": {
+            "product_id": 1,
+            "variant": 2,
+            "sku": "SKU002",
+            "price": "849.99"
+        }
+    },
+    {
+        "model": "Xen.productvariants",
+        "pk": 3,
+        "fields": {
+            "product_id": 2,
+            "variant": 1,
+            "sku": "SKU003",
+            "price": "1299.99"
+        }
+    }
+]

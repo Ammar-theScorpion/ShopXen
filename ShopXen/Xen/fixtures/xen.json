@@ -1,0 +1,21 @@
+[
+ 
+  {
+    "model": "Xen.Product",
+    "pk": 1,
+    "fields": {
+      "name": "Smartphone X",
+      "description": "High-end smartphone with great features",
+      "category": 1   
+    }
+  },
+  {
+    "model": "Xen.Product",
+    "pk": 2,
+    "fields": {
+      "name": "Laptop Y",
+      "description": "Powerful laptop for productivity",
+      "category": 2  
+    }
+  }
+]

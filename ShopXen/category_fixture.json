@@ -1,0 +1,18 @@
+[
+    {
+        "model": "Xen.category",
+        "pk": 1,
+        "fields": {
+            "category_name": "Electronics",
+            "parent_category": null
+        }
+    },
+    {
+        "model": "Xen.category",
+        "pk": 2,
+        "fields": {
+            "category_name": "Clothing",
+            "parent_category": null
+        }
+    }
+]
