@@ -1,0 +1,338 @@
+# version: "3.1"
+
+stories:
+  - story: User asks about product warranty
+    steps:
+      - intent: product_warranty
+      - action: utter_product_warranty
+  - story: User asks about product discount
+    steps:
+      - intent: product_discount
+      - action: utter_product_discount
+
+  - story: User asks about shipping options
+    steps:
+      - intent: shipping_options
+      - action: utter_shipping_options
+
+  - story: User asks about payment options
+    steps:
+      - intent: payment
+      - action: utter_payment_methods
+
+  - story: User asks about product features
+    steps:
+      - intent: product_features
+      - action: utter_product_features
+
+  - story: User asks about order status
+    steps:
+      - intent: order_status
+      - action: utter_order_status
+
+  - story: User asks about return policy
+    steps:
+      - intent: return_policy
+      - action: utter_return_policy
+
+  - story: User asks about product price
+    steps:
+      - intent: product_price
+      - action: utter_product_price
+
+  - story: User asks about customer service
+    steps:
+      - intent: customer_service
+      - action: utter_customer_service
+
+  - story: User asks about product colors
+    steps:
+      - intent: product_colors
+      - action: utter_product_colors
+
+  - story: User asks about payment methods
+    steps:
+      - intent: payment_methods
+      - action: utter_payment_methods
+  - story: User asks about return policies
+    steps:
+      - intent: return_policies
+      - action: utter_return_policies
+
+  - story: User asks about product feedback
+    steps:
+      - intent: product_feedback
+      - action: utter_product_feedback
+
+  - story: User asks about return reasons
+    steps:
+      - intent: return_reason
+      - action: utter_return_reason
+
+  - story: User asks for product recommendation
+    steps:
+      - intent: product_recommendation
+      - action: utter_product_recommendation
+
+  - story: User asks about product features
+    steps:
+      - intent: product_features
+      - action: utter_product_features
+
+  - story: User asks for a product list
+    steps:
+      - intent: product_list
+      - action: utter_product_list
+
+  - story: User asks about product availability
+    steps:
+      - intent: product_availability
+      - action: utter_product_availability
+
+  - story: User asks about product price range
+    steps:
+      - intent: product_price_range
+      - action: utter_product_price_range
+
+  - story: User asks about product dimensions and weight
+    steps:
+      - intent: product_dimensions_and_weight
+      - action: utter_product_dimensions_and_weight
+
+  - story: User asks for product images
+    steps:
+      - intent: product_images
+      - action: utter_product_images
+
+  - story: User asks about product customization options
+    steps:
+      - intent: product_customization_options
+      - action: utter_product_customization_options
+
+  - story: User asks about order status
+    steps:
+      - intent: order_status
+      - action: utter_order_status
+
+  - story: User asks about delivery date
+    steps:
+      - intent: delivery_date
+      - action: utter_delivery_date
+
+  - story: User asks about tracking number
+    steps:
+      - intent: tracking_number
+      - action: utter_tracking_number
+
+  - story: User asks about shipping address change
+    steps:
+      - intent: shipping_address_change
+      - action: utter_shipping_address_change
+
+  - story: User asks about payment confirmation
+    steps:
+      - intent: payment_confirmation
+      - action: utter_payment_confirmation
+  - story: User asks about parcel arrival
+    steps:
+      - intent: parcel_arrival
+      - action: utter_parcel_arrival
+
+  - story: User asks about order delay
+    steps:
+      - intent: order_delay
+      - action: utter_order_delay
+
+  - story: User asks about return initiation
+    steps:
+      - intent: return_initiation
+      - action: utter_return_initiation
+
+  - story: User asks about product exchange
+    steps:
+      - intent: product_exchange
+      - action: utter_product_exchange
+  - story: User asks about refund processing time
+    steps:
+      - intent: refund_processing_time
+      - action: utter_refund_processing_time
+
+  - story: User asks about sale product return policy
+    steps:
+      - intent: sale_product_return_policy
+      - action: utter_sale_product_return_policy
+
+  - story: User asks about discount code application
+    steps:
+      - intent: discount_code
+      - action: utter_discount_code
+
+  - story: User asks about payment being declined
+    steps:
+      - intent: payment_declined
+      - action: utter_payment_declined
+
+  - story: User asks about split payment
+    steps:
+      - intent: split_payment
+      - action: utter_split_payment
+
+  - story: User asks about saving payment information
+    steps:
+      - intent: save_payment_information
+      - action: utter_save_payment_information
+
+  - story: User asks about installments
+    steps:
+      - intent: installments
+      - action: utter_installments
+
+  - story: User asks about submitting another payment method
+    steps:
+      - intent: submit_another_payment_method
+      - action: utter_submit_another_payment_method
+
+  - story: User asks about foreign currency fees
+    steps:
+      - intent: foreign_currency_fees
+      - action: utter_foreign_currency_fees
+
+  - story: User asks about account creation
+    steps:
+      - intent: account_creation
+      - action: utter_account_creation
+
+  - story: User asks about shipping address update
+    steps:
+      - intent: shipping_address_update
+      - action: utter_shipping_address_update
+  - story: User asks about password reset
+    steps:
+      - intent: password_reset
+      - action: utter_password_reset
+
+  - story: User asks about email address change
+    steps:
+      - intent: email_address_change
+      - action: utter_email_address_change
+
+  - story: User asks about account deletion
+    steps:
+      - intent: account_deletion
+      - action: utter_account_deletion
+
+  - story: User asks about expedited shipping
+    steps:
+      - intent: expedited_shipping
+      - action: utter_expedited_shipping
+
+  - story: User asks about taxes during checkout
+    steps:
+      - intent: taxes
+      - action: utter_taxes
+
+  - story: User asks about shipping carrier
+    steps:
+      - intent: shipping_carrier
+      - action: utter_shipping_carrier
+
+  - story: User asks about signature confirmation
+    steps:
+      - intent: signature_confirmation
+      - action: utter_signature_confirmation
+
+  - story: User asks about changing delivery date
+    steps:
+      - intent: change_delivery_date
+      - action: utter_change_delivery_date
+
+  - story: User asks about eligibility for free gifts
+    steps:
+      - intent: free_gifts
+      - action: utter_free_gifts
+
+  - story: User asks about promo code stacking
+    steps:
+      - intent: promo_code_stacking
+      - action: utter_promo_code_stacking
+
+  - story: User asks about Black Friday deals
+    steps:
+      - intent: black_friday_deals
+      - action: utter_black_friday_deals
+
+  - story: User asks about buy-two-get-one-free promotion
+    steps:
+      - intent: buy_two_get_one_free
+      - action: utter_buy_two_get_one_free
+
+  - story: User asks about physical store locations
+    steps:
+      - intent: physical_store_locations
+      - action: utter_physical_store_locations
+
+  - story: User asks about tracking returns, replacements, or exchanges online
+    steps:
+      - intent: track_returns
+      - action: utter_track_returns
+
+  - story: User asks about technical support for website navigation issues
+    steps:
+      - intent: technical_support
+      - action: utter_technical_support
+
+  - story: User asks about email copies of past receipts or correspondence
+    steps:
+      - intent: email_receipts
+      - action: utter_email_receipts
+  - story: User asks about password reset
+    steps:
+      - intent: password_reset
+      - action: utter_password_reset
+
+  - story: User asks about login troubleshooting
+    steps:
+      - intent: login_troubleshooting
+      - action: utter_login_troubleshooting
+
+  - story: User asks about form filling troubleshooting
+    steps:
+      - intent: form_filling_troubleshooting
+      - action: utter_form_filling_troubleshooting
+
+  - story: User asks about zoom troubleshooting
+    steps:
+      - intent: zoom_troubleshooting
+      - action: utter_zoom_troubleshooting
+
+  - story: User asks about image loading troubleshooting
+    steps:
+      - intent: image_loading_troubleshooting
+      - action: utter_image_loading_troubleshooting
+# stories:
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye

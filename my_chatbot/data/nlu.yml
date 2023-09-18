@@ -1,0 +1,225 @@
+version: "3.1"
+
+nlu:
+  - intent: product_warranty
+    examples: |
+      - Does this product come with a warranty?
+      - Is there a warranty for this product?
+      - Tell me about the warranty.
+
+  - intent: product_return
+    examples: |
+      - Can I return this item if I don't like it?
+      - What's the return policy for this product?
+      - How long do I have to return the item?
+
+  - intent: product_free_shipping
+    examples: |
+      - Do you offer free shipping?
+      - Is there free shipping available?
+      - Tell me about your shipping options.
+  - intent: return_policies
+    examples: |
+      - what are the return policies
+
+  - intent: product_feedback
+    examples: |
+      - what do you think of this product
+
+  - intent: return_reason
+    examples: |
+      - what are your reasons for returning this item
+
+  - intent: product_recommendation
+    examples: |
+      - can you recommend a smartphone with a good camera and long battery life
+
+  - intent: product_features
+    examples: |
+      - what are the features of the latest model of {prodcut_name}
+
+  - intent: product_list
+    examples: |
+      - can you provide a list of the best-selling in {0}
+
+  - intent: product_availability
+    examples: |
+      - is the product available in different colors or sizes
+
+  - intent: product_price_range
+    examples: |
+      - what is the price range for a {0} products
+
+  - intent: product_dimensions_and_weight
+    examples: |
+      - what are the dimensions and weight of this item
+
+  - intent: product_images
+    examples: |
+      - can I see pictures of the front and back of the dress
+
+  - intent: product_customization_options
+    examples: |
+      - do you offer engraving or customization options
+
+  - intent: order_status
+    examples: |
+      - can you provide an update on the status of my recent order
+
+  - intent: delivery_date
+    examples: |
+      - when can I expect my package to be delivered
+
+  - intent: tracking_number
+    examples: |
+      - how can I track my shipment using the tracking number
+
+  - intent: shipping_address_change
+    examples: |
+      - is it possible to change the shipping address for my order
+
+  - intent: payment_confirmation
+    examples: |
+      - can you confirm if my payment for the order was successful
+  - intent: parcel_arrival
+    examples: |
+      - how do I know when my parcel will arrive
+
+  - intent: order_delay
+    examples: |
+      - why was my order delayed, and how much longer will it take
+
+  - intent: return_initiation
+    examples: |
+      - how can I initiate a return for a product that I purchased
+      - what is the refund process if I'm not satisfied with my purchase
+
+  - intent: product_exchange
+    examples: |
+      - can I exchange a product for a different size or color
+
+  - intent: refund_processing_time
+    examples: |
+      - how long does it take to process a refund after the return is received
+
+  - intent: sale_product_return_policy
+    examples: |
+      - what is the policy for returning products that were purchased on sale
+
+  - intent: discount_code
+    examples: |
+      - how can I apply a discount code during the checkout process
+
+  - intent: payment_declined
+    examples: |
+      - what should I do if my payment is declined during checkout
+
+  - intent: split_payment
+    examples: |
+      - is it possible to split the payment between two different cards
+
+  - intent: save_payment_information
+    examples: |
+      - can I save my payment information for future purchases
+
+  - intent: installments
+    examples: |
+      - how many installments can I split my purchase into
+
+  - intent: submit_another_payment_method
+    examples: |
+      - may I submit another method of payment once the order is processed
+
+  - intent: foreign_currency_fees
+    examples: |
+      - will foreign currency transactions attract additional fees
+
+  - intent: account_creation
+    examples: |
+      - how can I create an account on your website
+
+  - intent: shipping_address_update
+    examples: |
+      - how do I update my shipping address in my account settings
+  - intent: password_reset
+    examples: |
+      - I forgot my password. How can I reset it
+
+  - intent: email_address_change
+    examples: |
+      - Can I change my email address associated with my account
+
+  - intent: account_deletion
+    examples: |
+      - How can I delete my account from your website
+
+  - intent: expedited_shipping
+    examples: |
+      - What are my choices for expedited shipping
+
+  - intent: taxes
+    examples: |
+      - Will there be taxes added during checkout or upon delivery
+
+  - intent: shipping_carrier
+    examples: |
+      - Which carrier will deliver my items
+
+  - intent: signature_confirmation
+    examples: |
+      - Are there signature confirmation options available
+
+  - intent: change_delivery_date
+    examples: |
+      - Can I change the delivery date or timeframe for my order
+
+  - intent: free_gifts
+    examples: |
+      - Am I eligible for free gifts with my current order total
+
+  - intent: promo_code_stacking
+    examples: |
+      - Can I stack promo codes during checkout
+
+  - intent: black_friday_deals
+    examples: |
+      - Are there exclusive Black Friday deals that apply only to certain categories
+
+  - intent: buy_two_get_one_free
+    examples: |
+      - If I buy two items today, am I entitled to a discount on my next purchase
+
+  - intent: physical_store_locations
+    examples: |
+      - Are there physical store locations where I can pick up an item
+
+  - intent: track_returns
+    examples: |
+      - How do I track returns, replacements, or exchanges online
+
+  - intent: technical_support
+    examples: |
+      - Can I speak with a specialist if I face technical problems navigating your website
+
+  - intent: email_receipts
+    examples: |
+      - Can you email me copies of past receipts or correspondence
+  - intent: password_reset
+    examples: |
+      - How do I reset my password if I forgot it
+
+  - intent: login_troubleshooting
+    examples: |
+      - I'm having trouble logging into my account - what's the issue
+
+  - intent: form_filling_troubleshooting
+    examples: |
+      - I keep getting errors while trying to fill out a form. Can you assist me
+
+  - intent: zoom_troubleshooting
+    examples: |
+      - Whenever I click 'zoom,' nothing happens. Could you please help resolve the problem
+
+  - intent: image_loading_troubleshooting
+    examples: |
+      - The images on your page aren't loading properly. Is there anything wrong with the site

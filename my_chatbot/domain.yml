@@ -1,0 +1,343 @@
+version: "3.1"
+
+intents:
+  - product_warranty
+  - product_return
+  - product_free_shipping
+  - product_discount
+  - shipping_options
+  - payment
+  - product_features
+  - order_status
+  - return_policy
+  - product_price
+  - customer_service
+  - product_colors
+  - payment_methods
+  - return_policies
+  - product_feedback
+  - return_reason
+  - product_recommendation
+  - product_features
+  - product_list
+  - product_availability
+  - product_price_range
+  - product_dimensions_and_weight
+  - product_images
+  - product_customization_options
+  - order_status
+  - delivery_date
+  - tracking_number
+  - shipping_address_change
+  - payment_confirmation
+  - parcel_arrival
+  - order_delay
+  - return_initiation
+  - product_exchange
+  - refund_processing_time
+  - sale_product_return_policy
+  - discount_code
+  - payment_declined
+  - split_payment
+  - save_payment_information
+  - installments
+  - submit_another_payment_method
+  - foreign_currency_fees
+  - account_creation
+  - shipping_address_update
+  - password_reset
+  - email_address_change
+  - account_deletion
+  - expedited_shipping
+  - taxes
+  - shipping_carrier
+  - signature_confirmation
+  - change_delivery_date
+  - free_gifts
+  - promo_code_stacking
+  - black_friday_deals
+  - buy_two_get_one_free
+  - physical_store_locations
+  - track_returns
+  - technical_support
+  - email_receipts
+  - password_reset
+  - login_troubleshooting
+  - form_filling_troubleshooting
+  - zoom_troubleshooting
+  - image_loading_troubleshooting
+
+responses:
+  utter_product_warranty:
+    - text: "Yes, this product comes with a one-year warranty."
+    - text: "No, this product does not come with a warranty."
+    - text: "The warranty for this product is one year."
+    - text: "Please contact us for more information about the warranty for this product."
+
+  utter_product_return:
+    - text: "Yes, you can return this item within {days_number} days of purchase."
+    - text: "No, you cannot return this item."
+    - text: "Please contact us for more information about the return policy for this product."
+
+  utter_product_free_shipping:
+    - text: "Yes, we offer free shipping on orders over ${price}."
+    - text: "No, we do not offer free shipping."
+  utter_product_discount:
+    - text: "Yes, there is a discount available with a 10% savings ratio."
+    - text: "No, there is no discount code available at this time."
+    - text: "Please contact us for more information about discount codes."
+
+  utter_payment_google_wallet:
+    - text: "Google Wallet is not currently accepted as a payment option, but we invite you to check back later for updates. Thank you!"
+
+  utter_payment_apple_cash:
+    - text: "Unfortunately, we don't accept Apple Cash as a payment method. We apologize for any inconvenience caused."
+
+  utter_payment_methods:
+    - text: "We accept credit cards, debit cards, and PayPal."
+
+  utter_order_status:
+    - text: "Your order is expected to arrive within {0} business days."
+    - text: "Your order has been shipped and you should receive it within {0} business days."
+
+  utter_return_policy:
+    - text: "Our return policy is 30 days. You can find more information about our return policy on our website."
+    - text: "Our return policy is designed to make sure that you are happy with your purchase. If you are not happy with your purchase, you can return it within 30 days for a full refund."
+
+  utter_product_price:
+    - text: "This product costs {0}."
+
+  utter_customer_service:
+    - text: "You can contact our customer service team at 1-800-555-1212. Our customer service team is available 24/7 to answer your questions."
+
+  utter_product_colors:
+    - text: "This product is available in {0}."
+  utter_shipping_options:
+    - text: "Your estimated delivery date can be found in your order summary. You may also check the status of your shipment in your account."
+    - text: "Please note that delivery times may vary and depend on several factors such as destination address and availability of stock. Contact us if you require further information."
+
+  utter_shipping_free:
+    - text: "We offer free shipping on orders over $50. We also offer expedited shipping for an additional fee."
+  utter_return_policies:
+    - text: "We offer a 30-day return policy."
+    - text: "You can return any product for a full refund within 30 days of purchase."
+
+  utter_product_feedback:
+    - text: "I'm glad to hear that you like our product."
+    - text: "What do you like most about our product?"
+    - text: "Is there anything that we can improve about our product?"
+
+  utter_return_reason:
+    - text: "I'm sorry to hear that you're returning this item."
+    - text: "Can you tell me more about why you're returning this item?"
+    - text: "We're always looking for ways to improve our products and services. Your feedback will help us do that."
+
+  utter_product_recommendation:
+    - text: "Sure, I can recommend a few smartphones with good cameras and long battery life. What is your budget?"
+    - text: "Here are a few popular smartphones with good cameras and long battery life: the iPhone 13 Pro, the Samsung Galaxy S22 Ultra, and the Google Pixel 6 Pro."
+
+
+  utter_product_features:
+    - text: "The features of this product include: {0}"
+    - text: "This product has a variety of features that make it a great choice for your needs, it has: {0}"
+
+  utter_product_list:
+    - text: "Sure, here are a few of the best-selling in the {0}: {1}"
+
+  utter_product_availability:
+    - text: "Yes, the product is available in {0}."
+    - text: "It is also available in sizes {0}"
+
+  utter_product_price_range:
+    - text: "The price range for {0} products is typically from {1} to {2}"
+
+  utter_product_dimensions_and_weight:
+    - text: "The dimensions of this item are {0}. The weight of this item is {1}."
+
+  utter_product_images:
+    - text: "Sure, here are pictures of the front and back of the dress."
+
+  utter_product_customization_options:
+    - text: "Yes, we offer engraving and customization options for some products. Please contact us for more information."
+
+  utter_delivery_date:
+    - text: "Your package is expected to be delivered within {0} business days."
+
+  utter_tracking_number:
+    - text: "You can also track your package on our website by entering the tracking number in the tracking tool."
+
+  utter_shipping_address_change:
+    - text: "Yes, it is possible to change the shipping address for your order. Please contact us as soon as possible to make the change."
+
+  utter_payment_confirmation:
+    - text: "Your payment for the order was successful."
+    - text: "Your payment is still pending. Please contact us if you have any questions."
+  utter_parcel_arrival:
+    - text: "You will receive an email notification when your parcel arrives. You can also track your parcel using the tracking number provided in your order confirmation email."
+
+  utter_order_delay:
+    - text: "There was a delay in shipping your order due to unforeseen circumstances. Your order is now scheduled to ship within {0} business days."
+
+  utter_return_initiation:
+    - text: "To initiate a return, please contact our customer service team, and they will be happy to help you."
+    - text: "You can also initiate a return by visiting our website and following the instructions on the returns page."
+
+  utter_product_exchange:
+    - text: "Yes, you can exchange a product for a different size or color within 30 days of purchase. To exchange a product, please contact our customer service team, and they will be happy to help you."
+
+  utter_refund_processing_time:
+    - text: "We will process your refund within 7-10 business days after we receive the returned merchandise. You will receive an email notification once your refund has been processed."
+
+  utter_sale_product_return_policy:
+    - text: "You can return products that were purchased on sale within 30 days of purchase. However, you will only receive a refund for the original price of the product, not the sale price. To return a product that was purchased on sale, please contact our customer service team, and they will be happy to help you."
+
+  utter_discount_code:
+    - text: "You can apply a discount code during the checkout process by entering the code in the discount code field."
+
+  utter_payment_declined:
+    - text: "If your payment is declined during checkout, please check your card details and make sure that they are correct. You can also try using a different card. Please contact us if you have any questions about your payment."
+
+  utter_split_payment:
+    - text: "Yes, it is possible to split the payment between two different cards."
+    - text: "Please contact us if you have any questions about splitting your payment."
+
+  utter_save_payment_information:
+    - text: "Yes, you can save your payment information for future purchases. To do this, please check the box next to 'Save my payment information for future purchases' during the checkout process. You can also update your payment information at any time by logging into your account."
+
+  utter_installments:
+    - text: "You can split your purchase into up to 12 installments. To do this, please select the 'Pay in installments' option during the checkout process."
+
+  utter_submit_another_payment_method:
+    - text: "Yes, you may submit another method of payment once the order is processed. To do this, please contact us, and we will be happy to assist you."
+
+  utter_foreign_currency_fees:
+    - text: "Yes, foreign currency transactions may attract additional fees. Please contact us for more information about foreign currency fees."
+
+  utter_account_creation:
+    - text: "To create an account on our website, please visit our website and click on the 'Create an Account' button. You will need to provide your name, email address, and password."
+
+  utter_shipping_address_update:
+    - text: "To update your shipping address in your account settings, please log into your account and go to the 'Account Settings' page. Under the 'Shipping Address' section, you can enter your new shipping address."
+
+  utter_email_address_change:
+    - text: "Yes, you can change your email address associated with your account. To do this, please log into your account and go to the 'Account Settings' page. Under the 'Account Information' section, you can enter your new email address."
+
+  utter_account_deletion:
+    - text: "To delete your account from our website, please contact us, and we will assist you. We may ask you to provide some information to verify your identity before we can delete your account."
+
+  utter_expedited_shipping:
+    - text: "We offer a variety of expedited shipping options, including 2-day shipping, overnight shipping, and same-day shipping. The specific options available to you will depend on your location and the weight and size of your order."
+
+  utter_taxes:
+    - text: "Taxes will be added during checkout. The amount of tax charged will depend on your location and the total amount of your order."
+
+  utter_shipping_carrier:
+    - text: "We use a variety of carriers to deliver our items, including UPS, FedEx, and DHL. The specific carrier that will deliver your items will depend on your location and the weight and size of your order."
+
+  utter_signature_confirmation:
+    - text: "Yes, signature confirmation is available for an additional fee. Signature confirmation means that the carrier will require a signature from the recipient before delivering the package."
+
+  utter_change_delivery_date:
+    - text: "Yes, you can change the delivery date or timeframe for your order. To do this, please contact us, and we will be happy to assist you."
+
+  utter_free_gifts:
+    - text: "Yes, you may be eligible for free gifts with your current order total. To find out if you are eligible, please add the items you want to your cart and proceed to checkout."
+
+  utter_promo_code_stacking:
+    - text: "Yes, you can stack promo codes during checkout."
+    - text: "However, not all promo codes can be stacked."
+
+  utter_black_friday_deals:
+    - text: "Yes, we offer exclusive Black Friday deals that apply only to certain categories."
+    - text: "To find out more about these deals, please visit our website during Black Friday."
+
+  utter_buy_two_get_one_free:
+    - text: "Yes, we offer a buy-two-get-one-free promotion on select items."
+    - text: "To find out more about this promotion, please visit our website."
+
+  utter_physical_store_locations:
+    - text: "Yes, we have physical store locations where you can pick up an item."
+    - text: "To find a store near you, please visit our website and click on the 'Store Locator' page."
+
+  utter_track_returns:
+    - text: "To track returns, replacements, or exchanges online, please visit our website and click on the 'Order Status' page."
+    - text: "Enter your order number and tracking number, and you will be able to see the status of your return."
+
+  utter_technical_support:
+    - text: "Yes, you can speak with a specialist if you face technical problems navigating our website."
+    - text: "To do this, please visit our website and click on the 'Contact Us' page."
+    - text: "Fill out the form and select the option for technical support."
+    - text: "We will be happy to help you."
+
+  utter_email_receipts:
+    - text: "Yes, we can email you copies of past receipts or correspondence."
+    - text: "To do this, please visit our website and click on the 'Contact Us' page."
+    - text: "Fill out the form and select the option for email copies of receipts or correspondence."
+    - text: "We will send you an email with the requested documents."
+  utter_password_reset:
+    - text: "To reset your password, please click on the 'Forgot Password' link on the login page. Enter your email address, and we will send you a link to reset your password."
+   
+  utter_login_troubleshooting:
+    - text: "There are a few reasons why you might be having trouble logging into your account. Please check to make sure that you are entering your username and password correctly. You may also need to clear your browser's cache and cookies. If you are still having trouble logging in, please contact us, and we will be happy to help you."
+    
+  utter_form_filling_troubleshooting:
+    - text: "There are a few reasons why you might be getting errors while trying to fill out a form. Please make sure that you are entering the correct information in the correct fields. You may also need to disable any ad blockers or pop-up blockers that you are using. If you are still having trouble filling out a form, please contact us, and we will be happy to help you."
+    
+  utter_zoom_troubleshooting:
+    - text: "There are a few reasons why you might be having trouble zooming in on a page. Please make sure that you are using a supported browser. You may also need to enable JavaScript in your browser. If you are still having trouble zooming in, please contact us, and we will be happy to help you."
+    
+  utter_image_loading_troubleshooting:
+    - text: "There are a few reasons why the images on our site might not be loading properly. Please make sure that you have a stable internet connection. You may also need to clear your browser's cache and cookies. If you are still having trouble loading images, please contact us, and we will be happy to help you."
+
+actions:
+- utter_product_warranty
+- utter_product_return
+- utter_product_free_shipping
+- utter_product_discount
+- utter_shipping_free
+- utter_payment_google_wallet
+- utter_payment_apple_cash
+- utter_payment_methods
+- utter_product_features
+- utter_order_status
+- utter_return_policy
+- utter_product_price
+- utter_customer_service
+- utter_product_colors
+- utter_return_policies
+- utter_product_feedback
+- utter_return_reason
+- utter_product_recommendation
+- utter_product_list
+- utter_product_availability
+- utter_product_price_range
+- utter_product_dimensions_and_weight
+- utter_product_images
+- utter_product_customization_options
+- utter_delivery_date
+- utter_tracking_number
+- utter_shipping_address_change
+- utter_payment_confirmation
+  - utter_parcel_arrival
+  - utter_order_delay
+  - utter_return_initiation
+  - utter_product_exchange
+  - utter_refund_processing_time
+  - utter_sale_product_return_policy
+  - utter_discount_code
+  - utter_payment_declined
+  - utter_split_payment
+  - utter_save_payment_information
+  - utter_installments
+  - utter_submit_another_payment_method
+  - utter_foreign_currency_fees
+  - utter_account_creation
+  - utter_shipping_address_update
+ - utter_password_reset
+  - utter_login_troubleshooting
+  - utter_form_filling_troubleshooting
+  - utter_zoom_troubleshooting
+  - utter_image_loading_troubleshooting
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
