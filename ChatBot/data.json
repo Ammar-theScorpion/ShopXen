@@ -1,15 +1,30 @@
-// follow this structure
-// we need to add more data
 [
   {
     "tag": "greeting",
-    "patterns": ["hi", "hello", "hey"],
-    "responses": ["Hello!", "Hi there!", "Welcome! How can I assist you today?"]
+    "patterns": ["hi", "hello", "hey", "greetings", "good day", "good morning", "good evening"],
+    "responses": ["Hello!", "Hi there!", "Welcome! How can I assist you today?", "Hello! This is StoreXen Bot. How can I assist you?"]
   },
   {
     "tag": "greeting",
     "patterns": ["how's it going", "what's up"],
-    "responses": ["I'm here to help!", "Not much, just here to assist you.", "Hello! How can I assist you today?"]
+    "responses": ["I'm here to help!", "Not much, just here to assist you.", "Hello! How can I help you"]
+  },
+
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+  },
+  {"tag": "about",
+    "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+    "responses": ["I'm Xen, your bot assistant", "I'm Xen, an Artificial Intelligent bot"]
+  },
+  {"tag": "name",
+  "patterns": ["what is your name", "what should I call you", "whats your name?"],
+  "responses": ["You can call me Xen.", "I'm Xen!", "Just call me as Xen"]
+  },
+  {"tag": "help",
+  "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+  "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
   },
   {
     "tag": "product_info",
@@ -23,7 +38,48 @@
   },
   {
     "tag": "goodbye",
-    "patterns": ["bye", "see you later"],
-    "responses": ["Goodbye! Have a great day!", "See you later!"]
+    "patterns": ["Goodbye", "See you later", "Bye for now", "Farewell"],
+    "responses": ["Goodbye! Have a great day!", "See you later! Don't hesitate to return if you need assistance.", "Farewell!"]
+  },
+  {
+    "tag": "goodbye",
+    "patterns": ["Thanks for your help", "Appreciate your assistance", "Thank you and bye"],
+    "responses": ["You're welcome! If you have more questions, feel free to ask. Goodbye!", "You're welcome. Have a wonderful day!"]
+  },
+
+  {
+    "tag": "product_price",
+    "patterns": ["How much does [product_name] cost?", "What's the price of [product_name]?", "Tell me the price for [product_name]."],
+    "responses": ["The price for [product_name] is $[product_price].", "You can purchase [product_name] for $[product_price].", "[product_name] is priced at $[product_price]."]
+  },
+  {
+    "tag": "product_price",
+    "patterns": ["Can you give me the price of [product_name]?", "What's the cost of [product_name]?"],
+    "responses": ["Sure, [product_name] is available for $[product_price].", "The price for [product_name] is $[product_price]."]
+  },
+  {
+    "tag": "product_price",
+    "patterns": ["How expensive is [product_name]?", "Is [product_name] affordable?"],
+    "responses": ["[product_name] is reasonably priced at $[product_price].", "Many customers find [product_name] to be a great value at $[product_price]."]
+  },
+  {
+    "tag": "product_price",
+    "patterns": ["Tell me more about the pricing of [product_name]."],
+    "responses": ["Certainly! [product_name] comes with a price tag of $[product_price]. It's a competitive offer for the quality it provides."]
+  },
+
+
+  {
+    "tag": "payment",
+    "patterns": ["What payment methods do you accept?", "How can I pay"],
+    "responses": ["We accept major credit cards, debit cards, and PayPal"]
+  },
+
+
+  {
+    "tag": "order",
+    "patterns": ["Can I cancel my order?"],
+    "responses": ["Yes"]
   }
+
 ]
