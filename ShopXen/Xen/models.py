@@ -2,6 +2,26 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+class ChatHistory(models.Model):
+    user_query = models.JSONField(default=list)
+    bot_response = models.JSONField(default=list)
+
+    def add_user_query(self, query):
+        self.user_query.append(query)
+        self.save()
+
+    def add_bot_response(self, response):
+        self.bot_response.append(response)
+        self.save()
+
+    def histoy(self):
+        chat=[]
+
+        for i in range(len(self.user_query)):
+            chat.append({'User':self.user_query[i], 'Bot':self.bot_response[i]})
+
+        return chat
+
 class Category(models.Model):
     category_id = models.AutoField(primary_key=True)
     category_name = models.CharField(max_length=255)

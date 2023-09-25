@@ -1,0 +1,403 @@
+[
+  {
+    "tag": "greeting",
+    "responses": ["I'm here to help!", "Not much, just here to assist you.", "Hello! How can I help you", "Hello!", "Hi there!", "Welcome! How can I assist you today?", "Hello! This is StoreXen Bot. How can I assist you?"]
+  },
+  
+  {
+    "tag": "product_info",
+    "responses": ["Certainly! Our bestsellers include [product 1], [product 2], and [product 3].", "We have some great products, like [product A] and [product B].", "We offer a wide range of products. Is there something specific you're looking for?", "Our products include electronics, clothing, and more. What are you interested in?"]
+  },
+  {
+    "tag": "product_categories",
+    "responses": ["Our product categories include electronics, clothing, home goods, beauty products, and more."]
+  },
+  {
+    "tag": "shipping_info",
+        
+    "responses": ["no, not yet"]
+  },
+
+  {
+    "tag": "goodbye",
+    "responses": ["You're welcome! If you have more questions, feel free to ask. Goodbye!", "You're welcome. Have a wonderful day!", "Goodbye! Have a great day!", "See you later! Don't hesitate to return if you need assistance.", "Farewell!"]
+  },
+
+  {
+    "tag": "product_price",
+    "responses": ["The price for [product_name] is $[product_price].", "You can purchase [product_name] for $[product_price].", "[product_name] is priced at $[product_price].", "Sure, [product_name] is available for $[product_price].", "The price for [product_name] is $[product_price].", "Certainly! [product_name] comes with a price tag of $[product_price]. It's a competitive offer for the quality it provides.", "[product_name] is reasonably priced at $[product_price].", "Many customers find [product_name] to be a great value at $[product_price]."]
+  },
+  {
+    "tag": "payment",
+    "responses": ["We accept major credit cards, debit cards, and PayPal", "We accept credit cards, debit cards, and PayPal."]
+  },
+  {
+    "tag": "order",
+    "responses": ["Yes"]
+  },
+    {
+      "tag": "product_warranty",
+      "responses": [
+        "Yes, this product comes with a one-year warranty.",
+        "No, this product does not come with a warranty."
+      ]
+    },
+    {
+      "tag": "product_return",
+      "responses": [
+        "Yes, you can return this item within {0} days of purchase.",
+        "No, you cannot return this item."
+      ]
+    },
+    {
+      "tag": "product_free_shipping",
+      "responses": [
+        "Yes, we offer free shipping on orders over ${0}.",
+        "No, we do not offer free shipping."
+      ]
+    },
+    {
+      "tag": "product_discount",
+      "responses": [
+        "Yes, there is a discount available with a 10% savings ratio.",
+        "No, there is no discount code available at this time."
+      ]
+    },
+    {
+      "tag": "shipping_options",
+      "responses": [
+        "We don't ship"
+      ]
+    },
+    {
+      "tag": "payment",
+      "responses": [
+        "Google Wallet is not currently accepted as a payment option but we invite you to check back later for updates. Thank you!",
+        "You can pay with VISA or MASTERCARD only",
+        "Unfortunately, we don't accept Apple Cash as a payment method. We apologize for any inconvenience caused."
+      ]
+    },
+    {
+      "tag": "product_features",
+      "responses": [
+        "let me see"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "responses": [
+        "let me see"
+      ]
+    },
+    {
+      "tag": "contact_info",
+      "responses": ["You can reach our customer support team at support@storexen.com. We are available 24/7 to assist you."]
+    },
+   
+    {
+      "tag": "return_policy",
+      "responses": [
+        "No return."
+      ]
+    },
+    {
+      "tag": "product_price",
+      "responses": [
+        "let me see"
+      ]
+    },
+    {
+      "tag": "customer_service",
+      "responses": [
+        "You can contact our customer service team at 1-800-555-1212. Our customer service team is available 24/7 to answer your questions."
+      ]
+    },
+    {
+      "tag": "product_colors",
+      "responses": [
+        "hold a sec"
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "responses": [
+        "We accept credit cards, debit cards, and PayPal."
+      ]
+    },
+    
+    {
+      "tag": "return_policies",
+      "responses": [
+        "We offer a 30-day return policy.",
+        "You can return any product for a full refund within 30 days of purchase."
+      ]
+    },
+    {
+      "tag": "product_feedback",
+      "responses": [
+       "here what people think"
+      ]
+    },
+    {
+      "tag": "return_reason",
+      "responses": [
+        "Can you tell me more about why you're returning this item?"
+      ]
+    },
+    {
+      "tag": "product_recommendation",
+      "responses": [
+        "here what I have"
+      ]
+    },
+    {
+      "tag": "product_features",
+      "responses": [
+        "The latest model of the {0} is {1}"
+      ]
+    },
+    {
+      "tag": "product_list",
+      "responses": [
+        "Sure, "
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "responses": [
+        "let's see"
+      ]
+    },
+    {
+      "tag": "product_price_range",
+      "responses": [
+        "it's "
+      ]
+    },
+    {
+      "tag": "product_dimensions_and_weight",
+      "responses": [
+        ""
+      ]
+    },
+    {
+      "tag": "product_images",
+      "responses": [
+        ""
+      ]
+    },
+  
+    {
+      "tag": "order_status",
+      "responses": [
+        "on cart"
+      ]
+    },
+    {
+      "tag": "delivery_date",
+      "responses": [
+        "Your package is Won't be delivered"
+      ]
+    },
+    {
+      "tag": "tracking_number",
+      "responses": [
+        "You cannot."
+      ]
+    },
+    {
+      "tag": "shipping_address_change",
+      "responses": [
+        "I don't care."
+      ]
+    },
+    {
+      "tag": "payment_confirmation",
+      "responses": [
+        "Your payment for the order was successful.",
+        "Your payment is still pending. Please contact us if you have any questions."
+      ]
+    },
+    {
+      "tag": "parcel_arrival",
+      "responses": [
+        "You will receive an email notification when your parcel arrives. You can also track your parcel using the tracking number provided in your order confirmation email."
+      ]
+    },
+    {
+      "tag": "order_delay",
+      "responses": [
+        "it won't arrive"
+      ]
+    },
+    {
+      "tag": "return_initiation",
+      "responses": [
+        "To initiate a return, please contact our customer service team and they will be happy to help you.",
+        "You can also initiate a return by visiting our website and following the instructions on the returns page."
+      ]
+    },
+    {
+      "tag": "product_exchange",
+      "responses": [
+        "Yes, you can exchange a product for a different size or color within 30 days of purchase.To exchange a product, please contact our customer service team and they will be happy to help you."
+      ]
+    },
+    {
+      "tag": "refund_processing_time",
+      "responses": [
+        "We will process your refund within 7-10 business days after we receive the returned merchandise. You will receive an email notification once your refund has been processed."
+      ]
+    },
+    {
+      "tag": "sale_product_return_policy",
+      "responses": [
+        "You can return products that were purchased on sale within 30 days of purchase. However, you will only receive a refund for the original price of the product, not the sale price, To return a product that was purchased on sale, please contact our customer service team and they will be happy to help you."
+      ]
+    },
+    {
+      "tag": "discount_code",
+      "responses": [
+        "You can apply a discount code during the checkout process by entering the code in the discount code field."
+      ]
+    },
+    {
+      "tag": "payment_declined",
+      "responses": [
+        "If your payment is declined during checkout, please check your card details and make sure that they are correct, You can also try using a different card. Please contact us if you have any questions about your payment."
+      ]
+    },
+    {
+      "tag": "split_payment",
+      "responses": [
+        "Yes, it is possible to split the payment between two different cards.",
+        "Please contact us if you have any questions about splitting your payment."
+      ]
+    },
+    {
+      "tag": "save_payment_information",
+      "responses": [
+        "Yes, you can save your payment information for future purchases. To do this, please check the box next to 'Save my payment information for future purchases' during the checkout process. You can also update your payment information at any time by logging into your account."
+      ]
+    },
+    {
+      "tag": "installments",
+      "responses": [
+        "You can split your purchase into up to 12 installments. To do this, please select the 'Pay in installments' option during the checkout process."
+      ]
+    },
+    {
+      "tag": "submit_another_payment_method",
+      "responses": [
+        "Yes, you may submit another method of payment once the order is processed. To do this, please contact us and we will be happy to assist you."
+      ]
+    },
+    {
+      "tag": "foreign_currency_fees",
+      "responses": [
+        "Yes, foreign currency transactions may attract additional fees. Please contact us for more information about foreign currency fees."
+      ]
+    },
+    {
+      "tag": "account_creation",
+      "responses": [
+        "To create an account on our website, please visit our website and click on the 'Create an Account' button. You will need to provide your name, email address, and password."
+      ]
+    },
+    {
+      "tag": "shipping_address_update",
+      "responses": [
+        "ahhhhhhh."
+      ]
+    },
+    {
+      "tag": "password_reset",
+      "responses": [
+        "If you have forgotten your password, you can reset it by clicking on the 'Forgot Password' link on the login page. You will need to enter your email address and we will send you a link to reset your password."
+      ]
+    },
+    {
+      "tag": "email_address_change",
+      "responses": [
+        "Yes, you can change your email address associated with your account. To do this, please log into your account and go to the 'Account Settings' page. Under the 'Account Information' section, you can enter your new email address."
+      ]
+    },
+    {
+      "tag": "account_deletion",
+      "responses": [
+        "To delete your account from our website, please contact us and we will assist you. We may ask you to provide some information to verify your identity before we can delete your account."
+      ]
+    },
+  
+    {
+      "tag": "taxes",
+      "responses": [
+        "Taxes will be added during checkout. The amount of tax charged will depend on your location and the total amount of your order."
+      ]
+    },
+    
+    {
+      "tag": "change_delivery_date",
+      "responses": [
+        "Yes, you can change the delivery date or timeframe for your order. To do this, please contact us and we will be happy to assist you."
+      ]
+    },
+    {
+      "tag": "free_gifts",
+      "responses": [
+        "Yes, you may be eligible for free gifts with your current order total. To find out if you are eligible, please add the items you want to your cart and proceed to checkout."
+      ]
+    },
+    {
+      "tag": "promo_code_stacking",
+      "responses": [
+        "Yes, you can stack promo codes during checkout.",
+        "However, not all promo codes can be stacked."
+      ]
+    },
+    {
+      "tag": "black_friday_deals",
+      "responses": [
+        "Yes, we offer exclusive Black Friday deals that apply only to certain categories.",
+        "To find out more about these deals, please visit our website during Black Friday."
+      ]
+    },
+    {
+      "tag": "buy_two_get_one_free",
+      "responses": [
+        "Yes, we offer a buy-two-get-one-free promotion on select items.",
+        "To find out more about this promotion, please visit our website."
+      ]
+    },
+    {
+      "tag": "physical_store_locations",
+      "responses": [
+        "no"
+      ]
+    },
+    {
+      "tag": "track_returns",
+      "responses": [
+        "To track returns, replacements, or exchanges online, please visit our website and click on the 'Order Status' page.",
+        "Enter your order number and tracking number and you will be able to see the status of your return."
+      ]
+    },
+    
+    
+    {
+      "tag": "password_reset",
+      "responses": [
+        "will send you an email"
+      ]
+    },
+    {
+      "tag": "login_troubleshooting",
+      "responses": [
+        "You may also need to clear your browser's cache and cookies.",
+        "If you are still having trouble logging in, please contact us and we will be happy to help you."
+      ]
+    }
+  
+    
+]
+    
