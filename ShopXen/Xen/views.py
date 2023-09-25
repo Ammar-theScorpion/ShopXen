@@ -29,7 +29,6 @@ for item in data:
 def chathistory(request):
     response = ''
     body = request.body
-    print(body)
     decoded_str = urllib.parse.unquote(body.decode('utf-8'))
     query = decoded_str.split('=')[1]
 
@@ -55,7 +54,11 @@ def chathistory(request):
     ch.add_bot_response(response)
     ch = ChatHistory.objects.get(pk=1).histoy()
 
-    return HttpResponse(ch)
+    text = ''
+    for i in ch:
+        print(i.keys())
+        text += i['User'] + '@' + i['Bot'] + '@'
+    return HttpResponse(text)
 
 
 def preprocess_text(text):
@@ -110,3 +113,8 @@ def preSales(request, product_id):
     product = Product.objects.get(product_id=product_id)
     print(product)
     return render(request, 'Xen/presales.html', {'product':product})
+
+def delchat(request):
+    d = ChatHistory.objects.get(pk=1)
+    d.delete()
+    return HttpResponse('')

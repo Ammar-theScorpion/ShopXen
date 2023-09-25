@@ -14,17 +14,18 @@
 
         <label for="userInput">Enter Text:</label>
         <input type="text" id="input" name="userInput" required>
-        <button >Submit</button>
+        <button id="query">Submit</button>
     </form>
+    <button id="delete">delete chat</button>
 
     <div id="chat">
         
-    </div>
     {% for chat in history %}
     <h3> {{ chat.User }}</h3>
     <h3> {{ chat.Bot }}</h3>
     <hr>
     {% endfor %}
+</div>
 
 </body>
  

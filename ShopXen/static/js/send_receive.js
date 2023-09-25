@@ -10,10 +10,33 @@ $(document).ready(function() {
         }
      }
   });
-    $('button').click(function(event){
+  $('#delete').click(function(event){
+    event.preventDefault()
+    //tname = 'reverseString';
+    if(ajax !== null){
+        return;
+    }
+    ajax = $.ajax({
+        url: 'http://127.0.0.1:8000/delchat',
+            method:'POST',
+            contentType: 'text/plain', // to prevent Django from treating the ajax as a form form the Query
+            error:function(e){
+                console.log(e)
+            },
+            success: function(response){
+                $('#chat').text ('')
+            },
+            complete: function(){
+                ajax = null;
+            }
+        
+        });
+});
+    $('#query').click(function(event){
         event.preventDefault()
+        $('#chat').text ('')
+
         text = document.getElementById('input').value;
-        console.log(text);
         //tname = 'reverseString';
         if(ajax !== null){
             return;
@@ -31,18 +54,17 @@ $(document).ready(function() {
                 },
                 success: function(response){
                     try{
-                        var entries = response.split(",");
-                        document.querySelector('#chat').innerHTML = ''
 
-                        for (var i = 0; i < entries.length; i+=2) {
+                        var entries = response.split("@");
+                        console.log(entries)
+                        for (var i = 0; i < entries.length-1; i+=3) {
 
-
-                            var user = entries[i].split(':')[1];
-                            var bot = entries[i+1].split(':')[1];
-                            let h3 = $("<h3>").text(user);
+                            var user = entries[i];
+                            var bot = entries[i+1]
+                            let h3 = $("<h3>").text('user: '+user);
                             
                             $("#chat").append(h3); 
-                            h3 = $("<h3>").text(bot);
+                            h3 = $("<h3>").text('bot: '+bot);
                             $("#chat").append(h3); 
                             console.log("User: " + user);
                             console.log("Bot: " + bot);
