@@ -1,9 +1,9 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
 from .models import *
 import pickle
+import nltk
 from nltk.tokenize import word_tokenize
 from nltk.util import ngrams
-import nltk
 import string
 import urllib.parse
 import json
@@ -14,6 +14,11 @@ from sklearn.feature_extraction import DictVectorizer
 ######
 ###############
 # Create your views here.
+
+#d = ChatHistory.objects.all()
+#d.delete()
+#d = ChatHistory.objects.all()
+#d.delete()
 with open('data.json', 'r') as json_file:
     data = json.load(json_file)
 

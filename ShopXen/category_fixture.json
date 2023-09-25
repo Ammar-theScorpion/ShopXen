@@ -12,7 +12,7 @@
         "model": "Xen.category",
         "pk": 2,
         "fields": {
-            "category_name": "Home & Kitchen Under $30",
+            "category_name": "Home & Kitchen",
             "gimage": "",
             "parent_category": null
         }
@@ -44,5 +44,28 @@
             "parent_category": null
         }
     }
+
+    ,
+    {
+        "model": "Xen.category",
+        "pk": 6,
+        "fields": {
+            "category_name": "mobile",
+            "gimage": "",
+            "parent_category": null
+        }
+    }
+    ,
+    {
+        "model": "Xen.category",
+        "pk": 7,
+        "fields": {
+            "category_name": "Home",
+            "gimage": "",
+            "parent_category": null
+        }
+    }
+
+    
 
 ]

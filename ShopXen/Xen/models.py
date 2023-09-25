@@ -1,4 +1,7 @@
 from django.db import models
+
+# Create your models here.
+from django.db import models
 from django.contrib.auth.models import User
 
 
@@ -31,6 +34,54 @@ class Category(models.Model):
     def __str__(self):
         return self.category_name
 
+class Product(models.Model):
+    product_id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=255, null=False, blank=False)
+    warranty_period_months = models.PositiveIntegerField()
+    return_period_days = models.PositiveIntegerField()
+    discount_percentage = models.DecimalField(max_digits=5, decimal_places=2)
+    feature_list = models.TextField()
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    colors = models.CharField(max_length=255)
+    weight_grams = models.PositiveIntegerField()
+    image_link = models.URLField()
+    brand = models.CharField(max_length=255)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+
+    def __str__(self):
+        return self.name
+
+    @classmethod
+    def product(cls, name):
+        try:
+            return cls.objects.get(name = name)
+        except Exception :
+            return None
+'''
+class Product(models.Model):
+    product_id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=255, null=False, blank=False)
+    warranty_period_months = models.PositiveIntegerField()
+    return_period_days = models.PositiveIntegerField()
+    discount_percentage = models.DecimalField(max_digits=5, decimal_places=2)
+    feature_list = models.TextField()
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    colors = models.CharField(max_length=255)
+    weight_grams = models.PositiveIntegerField()
+    image_link = models.URLField()
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+
+    def __str__(self):
+        return self.name
+
+    @classmethod
+    def product(cls, name):
+        try:
+            return cls.objects.get(name = name)
+        except Exception :
+            return None
 
 class Product(models.Model):
     product_id = models.AutoField(primary_key=True)
@@ -66,6 +117,7 @@ class Specification(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     specification_name = models.CharField(max_length=255)
     specification_value = models.TextField()
+'''
 
 class Review(models.Model):
     reviews = models.ForeignKey(Product, on_delete=models.CASCADE)

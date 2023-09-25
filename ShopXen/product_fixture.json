@@ -1,138 +1,1019 @@
 [
-    {
-        "model": "Xen.product",
-        "pk": 1,
-        "fields": {
-            "name": "Apple AirPods Pro",
-            "description": "(2nd Gen) Wireless Earbuds, Up to 2X More Active Noise Cancelling, Adaptive Transparency, Personalized Spatial Audio MagSafe Charging Case (Lightning) Bluetooth Headphones for iPhone",
-            "category": 1
-        }
-    },
-
-    {
-        "model": "Xen.variants",
-        "pk": 1,
-        "fields": {
-            "variant": "Color",
-            "image": "",
-            "brand": "Apple"
-        }
-    },
-    {
-        "model": "Xen.variants",
-        "pk": 2,
-        "fields": {
-            "variant": "Price",
-            "image": "",
-            "brand": ""
-        }
-    },
-
-    {
-        "model": "Xen.variantvalue",
-        "pk": 1,
-        "fields": {
-            "variant_id": 1,
-            "value": "White"
-        }
-    },
-    {
-        "model": "Xen.variantvalue",
-        "pk": 2,
-        "fields": {
-            "variant_id": 1,
-            "value": "50"
-        }
-    },
-
-    {
-        "model": "Xen.productvariants",
-        "pk": 1,
-        "fields": {
-            "product_id": 1,
-            "variant":  1,
-            "sku": "SKU001",
-            "price": "799.99"
-        }
-    },
-    {
-        "model": "Xen.productvariants",
-        "pk": 2,
-        "fields": {
-            "product_id": 1,
-            "variant": 2,
-            "sku": "SKU002",
-            "price": "849.99"
-        }
-    },
-
-    {
-        "model": "Xen.product",
-        "pk": 2,
-        "fields": {
-            "name": "Apple AirPods",
-            "description": "(2nd Generation) Wireless Earbuds with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone",
-            "category": 1
-        }
-    },
-
-
-
-    {
-        "model": "Xen.variants",
-        "pk": 3,
-        "fields": {
-            "variant": "Color",
-            "image": "",
-            "brand": "Apple"
-        }
-    },
-    {
-        "model": "Xen.variants",
-        "pk": 4,
-        "fields": {
-            "variant": "Price",
-            "image": "",
-            "brand": ""
-        }
-    },
-
-    {
-        "model": "Xen.variantvalue",
-        "pk": 1,
-        "fields": {
-            "variant_id": 3,
-            "value": "White"
-        }
-    },
-    {
-        "model": "Xen.variantvalue",
-        "pk": 2,
-        "fields": {
-            "variant_id": 4,
-            "value": "60"
-        }
-    },
     
+      {
+        "model": "Xen.product",
+        "pk": 1,
+        "fields": {
+          "name": "Google Pixel 6 Pro",
+          "warranty_period_months": 3,
+          "return_period_days": 30,
+          "discount_percentage": 20,
+          "feature_list": "Top-tier Android phone",
+          "price": 999,
+          "colors": "Stormy Black",
+          "weight_grams": 210,
+          "category":6,
+          "brand": "Apple",
+          "image_link": "https://cdn.shopify.com/s/files/1/1126/0898/products/GOOGLEpixel6PRO2.jpg?v=1670244412"
+        }
+      },
+    {
+        "model": "Xen.product",
+        "pk": 2,
+        "fields": {
+            "name": "iPhone 13 Pro Max",
+            "warranty_period_months": 0,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "A high-end iOS device",
+            "price": 1099,
+            "colors": "Silver, Graphite",
+            "weight_grams": 238,
+            "category":6,
+            "brand": "Apple",
+            "image_link": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-13-pro-max-blue-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072989205"
+        }
+    },
     {
         "model": "Xen.product",
         "pk": 3,
         "fields": {
-            "name": "Apple AirTag",
-            "description": "We are working hard to be back in stock as soon as possible.",
-            "category": 1
+            "name": "Samsung Galaxy S21",
+            "warranty_period_months": 0,
+            "return_period_days": 30,
+            "discount_percentage": 15,
+            "feature_list": "Feature-packed Android",
+            "price": 899,
+            "colors": "Phantom Black",
+            "weight_grams": 200,
+            "category":6,
+            "brand": "Apple",
+            "image_link": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-13-pro-max-blue-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072989205"
         }
     },
+    {
+    "model": "Xen.product",
+    "pk": 4,
+    "fields": {
+        "name": "OnePlus 9 Pro",
+        "warranty_period_months": 3,
+        "return_period_days": 30,
+        "discount_percentage": 10,
+        "feature_list": "Flagship Android device",
+        "price": 799,
+        "colors": "Morning Mist",
+        "weight_grams": 200,
+        "brand": "Apple",
+        "category":6,
 
+        "image_link": "https://m.media-amazon.com/images/I/614cCf6bzyL.jpg"
+     }
+    },
     {
         "model": "Xen.product",
-        "pk": 4,
+        "pk": 5,
         "fields": {
-            "name": "Amazon Basics 48-Pack",
-            "description": "Alkaline High-Performance Batteries, 1.5 Volt, 10-Year Shelf Life",
-            "category": 1
+            "name": "iPhone SE (2020)",
+            "warranty_period_months": 3,
+            "return_period_days": 15,
+            "discount_percentage": 5,
+            "feature_list": "Compact iOS smartphone",
+            "price": 399,
+            "colors": "Red, Black, White",
+            "weight_grams": 148,
+            "brand": "Apple",
+            "category":6,
+
+            "image_link": "https://m.media-amazon.com/images/I/813ovO0PGGL._AC_UF894,1000_QL80_.jpg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 6,
+        "fields": {
+            "name": "Xiaomi Mi 11",
+            "warranty_period_months": 6,
+            "return_period_days": 15,
+            "discount_percentage": 12,
+            "feature_list": "High-performance Android",
+            "price": 699,
+            "colors": "Cosmic Black",
+            "weight_grams": 196,
+            "category":6,
+            "brand": "Apple",
+
+            "image_link": "https://m.media-amazon.com/images/I/61cJw9jl-0S._AC_UF1000,1000_QL80_.jpg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 7,
+        "fields": {
+            "name": "Huawei P40 Pro",
+            "warranty_period_months": 6,
+            "return_period_days": 15,
+            "discount_percentage": 8,
+            "feature_list": "Premium Android flagship",
+            "price": 899,
+            "colors": "Silver Frost",
+            "weight_grams": 209,
+            "category":6,
+
+            "brand": "Apple",
+            "image_link": "https://m.media-amazon.com/images/I/51soK4wL0kL.jpg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 8,
+        "fields": {
+            "name": "LG V60 ThinQ",
+            "warranty_period_months": 6,
+            "return_period_days": 15,
+            "discount_percentage": 10,
+            "feature_list": "Dual-screen Android",
+            "price": 699,
+            "colors": "Classy Blue",
+            "weight_grams": 214,
+            "category":6,
+
+            "brand": "Apple",
+            "image_link": "https://m.media-amazon.com/images/I/51oQx6Xh04L._AC_UF894,1000_QL80_.jpg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 9,
+        "fields": {
+            "name": "Sony Xperia 1 III",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 18,
+            "feature_list": "Multimedia powerhouse",
+            "price": 1199,
+            "colors": "Frosted Purple",
+            "weight_grams": 186,
+            "category":6,
+
+            "brand": "Sony",
+            "image_link": "https://m.media-amazon.com/images/I/71YvGj855+L._AC_UF894,1000_QL80_.jpg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 10,
+        "fields": {
+            "name": "OnePlus Nord",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 15,
+            "feature_list": "Mid-range Android",
+            "price": 399,
+            "colors": "Blue Marble",
+            "weight_grams": 184,
+            "category":6,
+
+            "brand": "Sony",
+            "image_link": "https://m.media-amazon.com/images/I/61RdG7c+VUL._AC_UF894,1000_QL80_.jpg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 11,
+        "fields": {
+            "name": "iPhone 12",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Previous-gen iOS device",
+            "price": 799,
+            "colors": "White, Black",
+            "weight_grams": 164,
+            "category":6,
+
+            "brand": "Apple",
+            "image_link": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-12-pro-gold-2020?wid=2000&hei=1897&fmt=jpeg&qlt=95&.v=1635202844000"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 12,
+        "fields": {
+            "name": "Samsung Galaxy A52",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 8,
+            "feature_list": "Mid-range Android",
+            "price": 349,
+            "colors": "Awesome Blue",
+            "weight_grams": 189,
+            "category":6,
+
+            "brand": "Sammsung",
+            "image_link": "https://phoneslab.net/palestine/wp-content/uploads/sites/15/2021/08/Samsung-Galaxy-A52.jpg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 13,
+        "fields": {
+            "name": "Google Pixel 5",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "High-quality Android",
+            "price": 699,
+            "colors": "Sorta Sage",
+            "weight_grams": 151,
+            "category":6,
+
+            "brand": "Google",
+            "image_link": "https://cdn.dxomark.com/wp-content/uploads/medias/post-59199/google_pixel_5_frontback-1024x768.jpeg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 14,
+        "fields": {
+            "name": "Xiaomi Redmi Note 9",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 5,
+            "feature_list": "Budget-friendly Android",
+            "price": 199,
+            "colors": "Forest Green",
+            "weight_grams": 199,
+            "category":6,
+
+            "brand": "Xiaomi",
+            "image_link": "https://m.media-amazon.com/images/I/612rtTjNMGL._AC_UF894,1000_QL80_.jpg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 15,
+        "fields": {
+            "name": "Huawei Mate 40 Pro",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 12,
+            "feature_list": "Feature-rich Android",
+            "price": 899,
+            "colors": "Mystic Silver",
+            "weight_grams": 212,
+            "category":6,
+
+            "brand": "Huawei",
+            "image_link": "https://fdn2.gsmarena.com/vv/bigpic/huawei-mate40-pro.jpg"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 16,
+        "fields": {
+            "name": "KitchenAid Stand Mixer",
+            "warranty_period_months": 24,
+            "return_period_days": 90,
+            "discount_percentage": 15,
+            "feature_list": "Powerful 5-quart stand mixer",
+            "price": 349.99,
+            "colors": "Empire Red, Onyx Black, Silver",
+            "weight_grams": 10000,
+            "image_link": "https://m.media-amazon.com/images/I/615kwOY9+3L._AC_UF894,1000_QL80_.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 17,
+        "fields": {
+            "name": "Instant Pot Duo",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "7-in-1 multi-functional pressure cooker",
+            "price": 89.99,
+            "colors": "Stainless Steel",
+            "weight_grams": 6800,
+            "image_link": "https://m.media-amazon.com/images/I/71V1LrY1MSL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 18,
+        "fields": {
+            "name": "Dyson V11 Vacuum",
+            "warranty_period_months": 24,
+            "return_period_days": 60,
+            "discount_percentage": 20,
+            "feature_list": "Cordless stick vacuum with strong suction",
+            "price": 499.99,
+            "colors": "Nickel, Blue",
+            "weight_grams": 2700,
+            "image_link": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/447921-01.png?$responsive$&cropPathE=mobile&fit=stretch,1&wid=640",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 19,
+        "fields": {
+            "name": "Ninja Foodi Grill",
+            "warranty_period_months": 12,
+            "return_period_days": 45,
+            "discount_percentage": 15,
+            "feature_list": "Indoor grill and air fryer combo",
+            "price": 249.99,
+            "colors": "Black, Stainless Steel",
+            "weight_grams": 14000,
+            "image_link": "https://m.media-amazon.com/images/I/71himNpCYgL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 20,
+        "fields": {
+            "name": "Keurig K-Elite",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Single-serve coffee maker with strong brew",
+            "price": 129.99,
+            "colors": "Brushed Silver, Brushed Gold",
+            "weight_grams": 3500,
+            "image_link": "https://m.media-amazon.com/images/I/71JSCGppzhL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 21,
+        "fields": {
+            "name": "Roomba 980 Robot Vacuum",
+            "warranty_period_months": 24,
+            "return_period_days": 90,
+            "discount_percentage": 12,
+            "feature_list": "Smart robotic vacuum with mapping technology",
+            "price": 699.99,
+            "colors": "Charcoal Gray",
+            "weight_grams": 4200,
+            "image_link": "https://m.media-amazon.com/images/I/71JSCGppzhL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 22,
+        "fields": {
+            "name": "Cuisinart Toaster Oven",
+            "warranty_period_months": 12,
+            "return_period_days": 45,
+            "discount_percentage": 8,
+            "feature_list": "Compact toaster oven with multiple functions",
+            "price": 79.99,
+            "colors": "Stainless Steel",
+            "weight_grams": 7250,
+            "image_link": "https://m.media-amazon.com/images/I/519JeryXQbL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 23,
+        "fields": {
+            "name": "Philips Air Fryer",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Healthy cooking with rapid air technology",
+            "price": 129.99,
+            "colors": "Black, White",
+            "weight_grams": 4800,
+            "image_link": "https://m.media-amazon.com/images/I/71Y1bLI95EL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 24,
+        "fields": {
+            "name": "iRobot Braava Jet M6",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 15,
+            "feature_list": "Robot mop with precision jet spray",
+            "price": 399.99,
+            "colors": "White",
+            "weight_grams": 2500,
+            "image_link": "https://m.media-amazon.com/images/I/81rv10KuoWL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 25,
+        "fields": {
+            "name": "Breville Barista Express",
+            "warranty_period_months": 24,
+            "return_period_days": 45,
+            "discount_percentage": 18,
+            "feature_list": "Espresso machine with built-in grinder",
+            "price": 599.99,
+            "colors": "Stainless Steel",
+            "weight_grams": 13200,
+            "image_link": "https://m.media-amazon.com/images/I/71BvCt6eAFL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 26,
+        "fields": {
+            "name": "KitchenAid Blender",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 12,
+            "feature_list": "High-performance blender with multiple speeds",
+            "price": 149.99,
+            "colors": "Onyx Black, Empire Red",
+            "weight_grams": 4500,
+            "image_link": "https://whirlpool-cdn.thron.com/delivery/public/thumbnail/whirlpool/pi-a6a36a65-66d4-4fa4-b523-ddf15a20c154/sckne7/std/1000x1000/Kitchenaid_Stirring_machine_5KSB4026BCA_Candy_Apple_Frontal.jpg?fill=zoom&fillcolor=rgba:255,255,255&scalemode=product&format=auto",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 27,
+        "fields": {
+            "name": "Shark Navigator Vacuum",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 8,
+            "feature_list": "Upright vacuum with anti-allergen seal",
+            "price": 159.99,
+            "colors": "White, Blue",
+            "weight_grams": 6500,
+            "image_link": "https://m.media-amazon.com/images/I/71FohJtmeNL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 28,
+        "fields": {
+            "name": "Hamilton Beach Toaster",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "2-slice toaster with wide slots",
+            "price": 29.99,
+            "colors": "Stainless Steel",
+            "weight_grams": 1600,
+            "image_link": "https://m.media-amazon.com/images/I/71+XpvK7tcL.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 29,
+        "fields": {
+            "name": "Dyson Pure Cool Air Purifier",
+            "warranty_period_months": 24,
+            "return_period_days": 60,
+            "discount_percentage": 20,
+            "feature_list": "Air purifier and fan with HEPA filter",
+            "price": 399.99,
+            "colors": "White, Silver",
+            "weight_grams": 5200,
+            "image_link": "https://m.media-amazon.com/images/I/713PrKskq6L.jpg",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 30,
+        "fields": {
+            "name": "NutriBullet Pro 900",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 12,
+            "feature_list": "High-speed blender for smoothies and more",
+            "price": 79.99,
+            "colors": "Champagne, Gray",
+            "weight_grams": 2720,
+            "image_link": "https://nutribulletme.com/cdn/shop/products/900-matte-mint_green-01.jpg?v=1654938356",
+            "category": 2,
+            "brand": "TechHome"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 31,
+        "fields": {
+            "name": "Philips Sonicare Electric Toothbrush",
+            "warranty_period_months": 24,
+            "return_period_days": 60,
+            "discount_percentage": 15,
+            "feature_list": "Advanced dental care",
+            "price": 79.99,
+            "colors": "White, Black",
+            "weight_grams": 220,
+            "image_link": "https://m.media-amazon.com/images/I/711nkA3jhaL.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 32,
+        "fields": {
+            "name": "Fitbit Charge 5 Fitness Tracker",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Monitor health and fitness",
+            "price": 149.95,
+            "colors": "Lunar White, Onyx Black",
+            "weight_grams": 30,
+            "image_link": "https://m.media-amazon.com/images/I/41MOVNsGMbL.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 33,
+        "fields": {
+            "name": "Braun Series 7 Electric Shaver",
+            "warranty_period_months": 24,
+            "return_period_days": 60,
+            "discount_percentage": 20,
+            "feature_list": "Close and comfortable shave",
+            "price": 199.99,
+            "colors": "Silver, Black",
+            "weight_grams": 230,
+            "image_link": "https://cdn11.bigcommerce.com/s-pzf4xjtssl/product_images/uploaded_images/braun-series7-7085cc-witb-device.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 34,
+        "fields": {
+            "name": "Revlon One-Step Hair Dryer & Volumizer",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 12,
+            "feature_list": "Hair styling made easy",
+            "price": 59.99,
+            "colors": "Pink, Black, Mint Green",
+            "weight_grams": 621,
+            "image_link": "https://m.media-amazon.com/images/I/71aXzv34N+L.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 35,
+        "fields": {
+            "name": "Omron Platinum Blood Pressure Monitor",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 8,
+            "feature_list": "Accurate blood pressure monitoring",
+            "price": 69.99,
+            "colors": "Silver",
+            "weight_grams": 480,
+            "image_link": "https://m.media-amazon.com/images/I/51D0HXQODaL._AC_UF894,1000_QL80_.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 36,
+        "fields": {
+            "name": "Neutrogena Hydro Boost Hyaluronic Acid Serum",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 15,
+            "feature_list": "Hydrate and rejuvenate skin",
+            "price": 16.97,
+            "colors": "Clear",
+            "weight_grams": 45,
+            "image_link": "https://www.neutrogena.co.uk/sites/neutrogena_uk/files/styles/jjbos_adaptive_images_generic-desktop/public/product-images/ntg_3574661632926_emea_hydroboost_hyaluronic_acid_serum_cee_15ml_alt001_0.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 37,
+        "fields": {
+            "name": "Oral-B Pro 1000 Electric Toothbrush",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Superior plaque removal",
+            "price": 49.94,
+            "colors": "White, Black",
+            "weight_grams": 322,
+            "image_link": "https://m.media-amazon.com/images/I/512V1GCv-zL.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 38,
+        "fields": {
+            "name": "Theragun Elite Percussive Therapy Device",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Targeted muscle relief",
+            "price": 399,
+            "colors": "Black, White",
+            "weight_grams": 1400,
+            "image_link": "https://m.media-amazon.com/images/I/51m5ysffoHL.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 39,
+        "fields": {
+            "name": "Conair Double Ceramic Hair Dryer",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 5,
+            "feature_list": "Fast and frizz-free drying",
+            "price": 24.99,
+            "colors": "White, Rose Gold",
+            "weight_grams": 453,
+            "image_link": "https://target.scene7.com/is/image/Target/GUEST_baf927f4-6198-48ce-afcc-1b571793b0f3?wid=488&hei=488&fmt=pjpeg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 40,
+        "fields": {
+            "name": "Waterpik WP-660 Water Flosser",
+            "warranty_period_months": 24,
+            "return_period_days": 60,
+            "discount_percentage": 15,
+            "feature_list": "Effective oral hygiene",
+            "price": 69.99,
+            "colors": "White",
+            "weight_grams": 907,
+            "image_link": "https://www.waterpik.com/oral-health/products/images/tips-accessories-aquarius-water-flosser-wp-660-white.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 41,
+        "fields": {
+            "name": "Gillette Fusion5 Men's Razor",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Smooth and precise shaving",
+            "price": 9.99,
+            "colors": "Chrome",
+            "weight_grams": 68,
+            "image_link": "https://m.media-amazon.com/images/I/81Uvv2MQ-nL.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 42,
+        "fields": {
+            "name": "Etekcity Digital Bathroom Scale",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 8,
+            "feature_list": "Accurate weight measurement",
+            "price": 19.99,
+            "colors": "Silver",
+            "weight_grams": 1560,
+            "image_link": "https://m.media-amazon.com/images/I/61XwieJFu4L._AC_UF1000,1000_QL80_.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 43,
+        "fields": {
+            "name": "Vitafusion Women's Gummy Vitamins",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Essential daily nutrients",
+            "price": 9.88,
+            "colors": "Mixed Berry",
+            "weight_grams": 220,
+            "image_link": "https://m.media-amazon.com/images/I/61kQcNPkrqL.jpg",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 44,
+        "fields": {
+            "name": "CeraVe Hydrating Cleanser",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 5,
+            "feature_list": "Gentle skin cleansing",
+            "price": 13.99,
+            "colors": "White",
+            "weight_grams": 473,
+            "image_link": "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v3/daily-moisturizing-lotion/700x875/cerave_daily_moisturizing_lotion_12oz_front-700x875-v2.jpg?rev=c1f482b619984b46bd02512590f52dfc",
+            "category": 3,
+            "brand": "TechWell"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 46,
+        "fields": {
+            "name": "Fenty Beauty Pro Filter Foundation",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "High-quality foundation",
+            "price": 35,
+            "colors": "Various shades available",
+            "weight_grams": 30,
+            "image_link": "https://m.media-amazon.com/images/I/41ExwIQNPlL.jpg",
+            "category": 5,
+            "brand": "GlamAura"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 47,
+        "fields": {
+            "name": "Anastasia Beverly Hills Modern Renaissance Palette",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 15,
+            "feature_list": "Popular eyeshadow palette",
+            "price": 42,
+            "colors": "Assorted eyeshadow colors",
+            "weight_grams": 200,
+            "image_link": "https://images.beautybay.com/eoaaqxyywn6o/ANAS0159F_1.jpg_s3.lmb_eijbuf/2779c8a528b5a87fe37d4e9936286d60/ANAS0159F_1.jpg",
+            "category": 5,
+            "brand": "ChicGlam"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 48,
+        "fields": {
+            "name": "Dyson Supersonic Hair Dryer",
+            "warranty_period_months": 12,
+            "return_period_days": 60,
+            "discount_percentage": 20,
+            "feature_list": "Innovative hair dryer",
+            "price": 399,
+            "colors": "Fuchsia, Black, Silver, Red",
+            "weight_grams": 618,
+            "image_link": "https://m.media-amazon.com/images/I/61zeY59MaBL._AC_UF1000,1000_QL80_.jpg",
+            "category": 5,
+            "brand": "ElegantFlow"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 49,
+        "fields": {
+            "name": "Glossier Boy Brow",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 5,
+            "feature_list": "Easy-to-use brow product",
+            "price": 16,
+            "colors": "Clear, Blonde, Black, Brown",
+            "weight_grams": 3,
+            "image_link": "https://www.stephanieswan.com/wp-content/uploads/2018/07/BoyBrow_-Glossier-Shade-Swatches.jpg",
+            "category": 5,
+            "brand": "CharmBrow"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 50,
+        "fields": {
+            "name": "Tatcha The Water Cream",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Luxurious moisturizer",
+            "price": 68,
+            "colors": "Violet-C, Silk Canvas, Deep Cleanse",
+            "weight_grams": 50,
+            "image_link": "https://www.tatcha.com/on/demandware.static/-/Sites-master_catalog_tatcha/default/dwadafb923/images/Awards-Badging/Product-Images/water-cream.jpg",
+            "category": 5,
+            "brand": "PrestigeGlow"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 51,
+        "fields": {
+            "name": "Urban Decay Naked Heat Palette",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Warm-toned eyeshadow palette",
+            "price": 54,
+            "colors": "Assorted eyeshadow colors",
+            "weight_grams": 190,
+            "image_link": "https://www.sephora.com/productimages/sku/s1960947-main-zoom.jpg?imwidth=315",
+            "category": 5,
+            "brand": "UrbanFlame"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 52,
+        "fields": {
+            "name": "Drunk Elephant C-Firma Day Serum",
+            "warranty_period_months": 12,
+            "return_period_days": 30,
+            "discount_percentage": 15,
+            "feature_list": "Vitamin C skincare serum",
+            "price": 80,
+            "colors": "N/A",
+            "weight_grams": 30,
+            "image_link": "https://m.media-amazon.com/images/I/61UYfhHCBDL.jpg",
+            "category": 5,
+            "brand": "EcoLux"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 53,
+        "fields": {
+            "name": "MAC Ruby Woo Lipstick",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 8,
+            "feature_list": "Iconic red lipstick",
+            "price": 19,
+            "colors": "Ruby Woo",
+            "weight_grams": 3.4,
+            "image_link": "https://images.asos-media.com/products/mac-matte-lipstick-ruby-woo/9742846-1-rubywoo?$n_640w$&wid=513&fit=constrain",
+            "category": 5,
+            "brand": "IconiLuxe"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 54,
+        "fields": {
+            "name": "NARS Radiant Creamy Concealer",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 12,
+            "feature_list": "High-coverage concealer",
+            "price": 30,
+            "colors": "Various shades available",
+            "weight_grams": 6.9,
+            "image_link": "https://www.narscosmetics.com/on/demandware.static/-/Sites-itemmaster_NARS/default/dw51a276cc/hi-res/0607845012344.jpg",
+            "category": 5,
+            "brand": "RadiantBlend"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 55,
+        "fields": {
+            "name": "Too Faced Better Than Sex Mascara",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Bestselling mascara",
+            "price": 26,
+            "colors": "Black",
+            "weight_grams": 15,
+            "image_link": "https://m.media-amazon.com/images/I/412If4mVruL.jpg",
+            "category": 5,
+            "brand": "LushLash"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 56,
+        "fields": {
+            "name": "Charlotte Tilbury Pillow Talk Lipstick",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 12,
+            "feature_list": "Popular nude lipstick",
+            "price": 34,
+            "colors": "Pillow Talk",
+            "weight_grams": 3.5,
+            "image_link": "https://images.ctfassets.net/wlke2cbybljx/333HBN4QOYIMsdQrmSA6TW/d418b9c6ec86e56e9b8d434dd14fc091/Pillowtalk_Duo-Original_And_Medium_Open_Packshot__1_.png?fm=jpg&bg=rgb%3Affffff",
+            "category": 5,
+            "brand": "NudeGlow"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 57,
+        "fields": {
+            "name": "Morphe x Jaclyn Hill Eyeshadow Palette",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 15,
+            "feature_list": "Collaboration eyeshadow palette",
+            "price": 39,
+            "colors": "Assorted eyeshadow colors",
+            "weight_grams": 230,
+            "image_link": "https://www.morphe.com/cdn/shop/products/541_Global_Nov_JH_Eyeshadow_Palette_PDP_open2_500x.jpg?v=1583524075",
+            "category": 5,
+            "brand": "CollabGlam"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 58,
+        "fields": {
+            "name": "Maybelline Fit Me Matte + Poreless Foundation",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 5,
+            "feature_list": "Affordable matte foundation",
+            "price": 6,
+            "colors": "Various shades available",
+            "weight_grams": 30,
+            "image_link": "https://www.maybelline.com.au/~/media/mny/global/face-makeup/foundation/fit-me-matte-poreless-foundation/maybelline-fit-me-matte-poreless-foundation-115-ivory-041554433432-c.jpg?thn=0&w=380&hash=C877811E37EE0A4C3D30BA26DC75670F87C6A143",
+            "category": 5,
+            "brand": "BudgetBlend"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 59,
+        "fields": {
+            "name": "Tarte Shape Tape Concealer",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 10,
+            "feature_list": "Full-coverage concealer",
+            "price": 27,
+            "colors": "Various shades available",
+            "weight_grams": 10,
+            "image_link": "https://www.sephora.com/productimages/sku/s2452316-main-zoom.jpg?imwidth=315",
+            "category": 5,
+            "brand": "CoverBlend"
+        }
+    },
+    {
+        "model": "Xen.product",
+        "pk": 60,
+        "fields": {
+            "name": "Becca Shimmering Skin Perfector Highlighter",
+            "warranty_period_months": 6,
+            "return_period_days": 30,
+            "discount_percentage": 8,
+            "feature_list": "Popular highlighter",
+            "price": 38,
+            "colors": "Champagne Pop",
+            "weight_grams": 50,
+            "image_link": "https://m.smashbox.com/media/images/products/840x840/sb_sku_C72101_840x840_0.jpg",
+            "category": 5,
+            "brand": "RadiantGlow"
         }
     }
-
-
+    
 ]
