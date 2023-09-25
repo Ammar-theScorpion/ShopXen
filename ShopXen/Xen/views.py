@@ -8,9 +8,13 @@ import string
 import urllib.parse
 import json
 import random
+import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
 
 from nltk import pos_tag
 from sklearn.feature_extraction import DictVectorizer
+from nltk.stem import PorterStemmer
+
 ######
 ###############
 # Create your views here.
@@ -26,28 +30,61 @@ chatbot_responses = {}
 for item in data:
     chatbot_responses[item['tag']] = item['responses']
 
+sim_tfidfile = open('similarity_tfidf.pickle', 'rb')
+sim_tfidf = pickle.load(sim_tfidfile)
+
+
+pat_tfidfile = open('tfidf_matrix.pkl', 'rb')
+pat_tfidf = pickle.load(pat_tfidfile)
+
+
+
+def check_similarity(query):
+    query_ = []
+    stemmer = PorterStemmer()
+    query = query.split(' ')
+    for pattern in query:
+        pat = ''
+        pat += stemmer.stem(pattern.lower())+' '
+        
+        query_.append(' '.join(word_tokenize(pat)))
+
+    g = sim_tfidf
+    uqv = sim_tfidf.transform(query).toarray()
+    cosine_similarities = cosine_similarity(uqv, pat_tfidf).flatten()
+
+    idxs = np.where(cosine_similarities>0.3)
+    if len(list(idxs[0]))==0:
+        return -1
+
+    return 1
+
+
+
 def chathistory(request):
     response = ''
     body = request.body
     decoded_str = urllib.parse.unquote(body.decode('utf-8'))
     query = decoded_str.split('=')[1]
 
+    response = 'Sorry, but I cannot help you with that'
+    if check_similarity(query) != -1:
 
-    feature_dict = preprocess_text_to_features(query)
-    pos_tags = extract_pos_tags(query)
-    for tag in pos_tags:
-        feature_dict[tag] = True
-        
-    vectorizerfile = open('vectorizer.pickle', 'rb')
-    vectorizer = pickle.load(vectorizerfile)
+        feature_dict = preprocess_text_to_features(query)
+        pos_tags = extract_pos_tags(query)
+        for tag in pos_tags:
+            feature_dict[tag] = True
+            
+        vectorizerfile = open('vectorizer.pickle', 'rb')
+        vectorizer = pickle.load(vectorizerfile)
 
-    feature_vector = vectorizer.transform([feature_dict])
-    chatfile = open('chatbot.pickle', 'rb')
-    chatmodel = pickle.load(chatfile)
+        feature_vector = vectorizer.transform([feature_dict])
+        chatfile = open('chatbot.pickle', 'rb')
+        chatmodel = pickle.load(chatfile)
 
-    predicted_tag = chatmodel.predict(feature_vector)[0]
-    response_options = chatbot_responses[predicted_tag]
-    response = random.choice(response_options)
+        predicted_tag = chatmodel.predict(feature_vector)[0]
+        response_options = chatbot_responses[predicted_tag]
+        response = random.choice(response_options)
     
     ch, created =  ChatHistory.objects.get_or_create(pk=1)
     ch.add_user_query(query)
