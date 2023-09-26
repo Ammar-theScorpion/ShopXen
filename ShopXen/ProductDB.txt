@@ -1,0 +1,74 @@
+Starting with Product the main fields of a product are
+- Product_id (PK)
+- Product_name
+- Description
+- Category
+
+from splitting multivalued fields into subtables so they become related to sub-product and we get
+
+SubProduct table
+- product_id (PK)
+- sku (PK)
+- Size
+- color_id (FK)
+- brand_id (fk)
+- product (fk)
+- type_id (fk)
+- Price
+- Stock
+
+Product Attribute table
+- id (pk)
+- name
+- description
+
+Product Attribute Value table
+- id (pk)
+- id_attribute (fk)
+- value
+- sku
+
+product AttSub Product table
+- id (pk)
+- subproduct_id (fk)
+- sku_id (fk)
+
+Category table
+- Category_id (PK)
+- Category_name
+- product_id (FK)
+
+Brand table
+- id (PK)
+- name
+- created_at
+
+Image table
+- image_id (PK)
+- title 
+- description
+
+Stock
+- id (PK)
+- unit_soild
+- 
+
+Reviews and Ratings Table:
+
+- Review ID (Primary Key)
+- Product ID (Foreign Key)
+- User ID (Foreign Key)
+- Rating
+- Review Text
+- Date
+
+Type table
+- type_id
+- type_name
+
+ProductAttrib Type table
+- id (pk)
+- productAtt_id (fk)
+- type_id (fk)
+ 
+For more information check https://www.youtube.com/watch?v=EbLEyM9SyZQ&list=PLOLrQ9Pn6cay_cQkyg-WYYiJ_EKU8KWKh&index=1

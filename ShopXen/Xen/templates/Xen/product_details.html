@@ -1,0 +1,33 @@
+{% extends 'Xen/main.html' %}
+{% load static %}
+{% block content%}
+    <div class="row">
+    
+        {% for product in products %}
+
+        
+        <div class="col-lg-4">
+                {{ product.feature_list }}<br>
+                <div class="box-element product">
+                    
+                    <a href="{% url 'preSales' product.product_id %}">
+                        <h6><strong>{{ product }}</strong></h6>
+
+                        
+                        <strong>Discount:</strong> {{ product.discount_percentage }}%<br>
+                            <img class="thumbnail" src="{{ product.image_link }}" >
+
+                        <li>
+                            Price: ${{ product.price }}
+                        </li>
+                        <small style="color: blue;">Shop now</small>
+                    </a>
+                </div>
+                
+            </div>
+
+               
+            {% endfor %}
+                         
+            </div>
+{% endblock content%}

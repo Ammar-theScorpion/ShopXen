@@ -1,0 +1,43 @@
+{% extends 'Xen/main.html' %}
+{% load static %}
+{% block content%}
+    <div class="product-detail">
+        <div class="product-image">
+            <img class="thumbnail" src="{{ product.image_link }}" style="width:200px; height:200px;" >
+        </div>
+        <div class="product-info">
+            <h1>{{ product }}</h1>
+            <p>{{ product.description }}</p>
+        </div>
+        <div class="add-to-cart">
+                {% csrf_token %}
+                <button type="submit">Add to Cart</button>
+            </form>
+        </div>
+    </div>
+    Technical Details
+    {{product}}
+        {% for spec in product.specification_set.all %}
+        <li>
+            <p><h5>{{spec.specification_name}} : {{ spec.specification_value }}</p></h5>
+            <hr>
+        </li>
+        {% empty %}
+            <li>No reviews yet.</li>
+        {% endfor %}
+    <div class="product-reviews">
+        <h2>Customer Reviews</h2>
+        <ul>
+            {% for review in product.review_set.all %}
+                <li>
+                    <p>Rating: {{ review.rating }}</p>
+                    <p>Comment: {{ review.comment }}</p>
+                    <p>Posted by: {{ review.user.username }}</p>
+                </li>
+            {% empty %}
+                <li>No reviews yet.</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock content%}

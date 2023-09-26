@@ -1,0 +1,23 @@
+{% extends 'Xen/main.html' %}
+{% load static %}
+{% block content%}
+
+    <div class="row">
+        {% for category in categories %}
+            <div class="col-lg-4">
+                <div class="box-element product">
+                    
+                    <a href="{% url 'product_detail' category.category_id %}">
+                        <h6><strong>{{ category }}</strong></h6>
+                        <img class="thumbnail" src="{{ category.gimage.url }}" >
+                        <small style="color: blue;">Shop now</small>
+                    </a>
+                </div>
+                
+            </div>
+
+               
+                         
+            {% endfor %}
+        </div>
+{% endblock content%}

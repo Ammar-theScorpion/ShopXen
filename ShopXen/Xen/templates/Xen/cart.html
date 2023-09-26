@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Pgae</title>
+    <!-- Include Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="/ShopXen/static/css/cart.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main_div">
+        <header class="header">
+            <div class="nev_par">
+                <h1 class="title">Products Page</h1>
+                <div class="buttons-container"><button><ion-icon name="moon-outline" class="moon-icon"></ion-icon><span
+                            class="button-text">Dark Mode</span></button>
+                    <button><ion-icon name="cart-outline"></ion-icon><span
+                            class="button-text">Cart</span></button>
+                </div>
+
+            </div>
+            <div class="welcome_section">
+                <div class="green-triangle"></div>
+                <div class="blue-triangle"></div>
+
+                <div class="welcome flex">
+                    <div class="container">
+                        <h1 class="welcome-header">Welcome to Products Page</h1>
+                        <p class="brief-desc">We have a new Products that's fresh, modern and new</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Add the search bar -->
+        <div class="content">
+            <div id="header_container">
+                <div class="shadow search_bar">
+                    <div class="search_div">
+                        <i id="search_icon" class="fas fa-search"></i>
+                        <input type="text" class="search_input" placeholder="Search...">
+                    </div>
+                    <div class="option_div">
+                        <div class="filter-container border_right">
+                            <label for="sortSelect">Sort by:</label>
+                            <select id="sortSelect">
+                                <option value="Default">Default</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="filter-container border_left">
+                            <label for="filterSelect">Filter by:</label>
+                            <select id="filterSelect">
+                                <option value="Default">Default</option>
+                                <option value="choice1">Choice 1</option>
+                                <option value="choice2">Choice 2</option>
+                                <option value="choice3">Choice 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search_result">
+                <h1>"6" product Found</h1>
+            </div>
+            <div class="cards_wrapper">
+                <div class="card">
+                    <img src="/ShopXen/static/images/iphone 15.jpg" class='card_image'>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <p>Apple</p>
+                            <p><b>Iphone 15</b></p>
+                        </div>
+                        <div class="card_stars">
+                            <ion-icon name="star" class="star"></ion-icon>
+                            <ion-icon name="star" class="star"></ion-icon>
+                            <ion-icon name="star" class="star"></ion-icon>
+                            <ion-icon name="star-outline" class="star"></ion-icon>
+                            <ion-icon name="star-outline" class="star"></ion-icon>
+                        </div>
+                        <p class="card_footer">price:800$</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/ShopXen/static/images/iphone15pro.jpg" class='card_image'>
+                    <div class="card_body">
+                        <div class="card_title">
+                            <p>Apple 
+                            </p>
+                            <p>
+                                <b>Iphone 15 pro</b>
+                            </p>
+                        </div>
+                        <div class="card_stars">
+                            <ion-icon name="star" class="star"></ion-icon>
+                            <ion-icon name="star" class="star"></ion-icon>
+                            <ion-icon name="star" class="star"></ion-icon>
+                            <ion-icon name="star-outline" class="star"></ion-icon>
+                            <ion-icon name="star-outline" class="star"></ion-icon>
+                        </div>
+                        <p class="card_footer">price:1000$</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+
+ 
+
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
