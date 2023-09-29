@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Text Input with Submit Button</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="{% static 'js/send_receive.js' %}"></script>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+
+        <label for="userInput">Enter Text:</label>
+        <input type="text" id="input" name="userInput" required>
+        <button id="query">Submit</button>
+    </form>
+    <button id="delete">delete chat</button>
+
+    <div id="chat">
+        
+    {% for chat in history %}
+    <h3> {{ chat.User }}</h3>
+    <h3> {{ chat.Bot }}</h3>
+    <hr>
+    {% endfor %}
+</div>
+
+</body>
+ 
+</html>
